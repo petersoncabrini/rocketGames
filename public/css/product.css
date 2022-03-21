@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+/* header */
 
 header {
     height: 85px;
@@ -67,10 +68,89 @@ header p {
     font-size: 16px;
     height: 35px;
     background-color: #297C9F;
+    margin-bottom: 30px;
 }
 
 .navBar p {
     display: inline-block;
     margin-inline: 70px;
     margin-block: 8px;
+}
+
+/* Main */
+
+#productName {
+    font-size: 1.8rem;
+    margin-left: 50px;
+}
+
+#product {
+    display: flex;
+    align-items: center;
+}
+
+#imageProduct {
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 600px;
+    border-style: solid;
+    border-color: #021E34;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+
+.cover {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 270px;
+    height: 350px;
+}
+
+.shareProduct {
+    background-color: #297C9F;
+    border-radius: 20px 20px 0 0;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
+
+.shareProduct ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shareProduct li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.productImages{
+    height: 137px;
+    background-color: #021E34;
+    border-radius: 0 0 20px 20px;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
+
+.productImages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.productImages li {
+    display: inline-block;
+    margin-inline: 10px;
+    margin-top: 5px;
+    border: solid;
+    border-color: #297C9F ;
+}
+
+.productImagesBar {
+    width: 140px;
+    height: 85px;
 }

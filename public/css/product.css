@@ -65,6 +65,7 @@ header p {
 }
 
 .navBar {
+    display: block;
     text-align: center;
     font-size: 16px;
     height: 35px;
@@ -72,10 +73,15 @@ header p {
     margin-bottom: 30px;
 }
 
-.navBar p {
+.navBar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar a li {
     display: inline-block;
-    margin-inline: 70px;
-    margin-block: 8px;
+    margin-top: 8px;
+    margin-inline: 40px;
 }
 
 /* Main */
@@ -110,32 +116,30 @@ header p {
 }
 
 .shareProduct {
-    background-color: #297C9F;
+    background-color: #021E34;
+    color: #FFFFFF;
     border-radius: 0 0 20px 20px;
-    height: 60px;
+    height: 40px;
     font-size: 18px;
-    display: flex;
-    text-align: center;
-    justify-content:center;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .shareProduct ul {
     list-style: none;
-    padding: 0;
 }
 
 .shareProduct li {
     display: inline-block;
     margin-inline: 10px;
+    margin-top: 10px;
 }
 
 .imagesBar{
     margin-left: 40px;
     height: 600px;
     width: 200px;
+    background-color: #021E34;
     border: solid;
-    background-color: white;
     border-radius: 25px;
     text-align: center;
 }
@@ -148,6 +152,8 @@ header p {
 .imagesBar li {
     display: inline-block;
     margin-bottom: 30px;
+    border: solid;
+    border-color: #FFFFFF;
 }
 
 .productImages {
@@ -191,7 +197,7 @@ header p {
     margin-top: 10px;
     height: 480px;
     width: 370px;
-    background-color: #021E34;
+    background-color:#021E34;
     border: solid;
     border-radius: 25px;
     font-size: 3rem;
@@ -218,7 +224,9 @@ header p {
     width: 100px;
     border: solid;
     border-radius: 25px;
+    background-color: #297C9F;
     border-color: #297C9F;
+    color: #FFFFFF;
 }
 
 #cep {
@@ -231,25 +239,13 @@ header p {
 }
 
 #addShoppingCar {
-    display: flex;
-    margin-top: -100px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 80px;
-    width: 350px;
-    background-color: white;
+    margin-top: 80px;
     border: solid;
     border-radius: 25px;
-    font-size: 1.8rem;
-    color: #021E34;
-    text-align: center;
-}
-
-#addShoppingCar p {
-    margin-top: 5px;
-}
-
-#addShoppingCar img {
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #297C9F;
+    border-color: #297C9F;
+    color: #FFFFFF;
+    width: 300px;
+    height: 60px;
+    font-size: 1.5rem;
 }

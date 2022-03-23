@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.produto{
+    background: #021E34;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.flex{
+    display: flex;
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+}
+
+.espaco-topo{
+    margin-top: 100px;
+    color: #fff;
+}

@@ -5,17 +5,21 @@
 }
 
 .container{
-    display: flex;
     border: solid 1px black;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
     background-color: rgb(214, 205, 205);
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     box-sizing: border-box;
-    width: 50em
+    width: 50em;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.flex{
+    display: flex;
 }
 
 .produtos{
@@ -39,4 +43,9 @@
     
 }
 
-@media (max)
+
+@media (max-width: 800px){ 
+    .container{
+        box-sizing: auto;
+    }    
+}

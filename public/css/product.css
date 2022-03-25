@@ -1,18 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color:#f2f2f2;
+    width: 100vw;
+    background-color:#d4d3d3;
 }
 
-/* --------------------- header ------------------------ */
+header section{
+    height: 10vh;
+    background-color: #021e34;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
 
-header {
+header section .logo{
+    height: 50px;
+    width: 50px;
+}
+
+header section .searchBar input {
+    text-align: center;
+    font-size: 15px;
+    width: 500px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#297C9F;
+}
+
+header section .searchBar button {
+    width: 80px;
+    font-size: 15px;
+    border: 1px solid #297C9F;
+    border-radius: 5px;
+    background-color: #297C9F
+}
+
+header section .avatarProfile {
+    height: 40px;
+    width: 40px;
+}
+
+header section .account {
+    margin-inline: -120px;
+    width: 100px;
+}
+
+header section a {
+    text-decoration: none;
+}
+
+header section .shoppingCar {
+    height: 40px;
+    width: 40px;
+}
+
+nav {
+    height: 4vh;
+    background-color: #297C9F;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 2px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+}
+
+section.product {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+}
+
+div.container {
+    background-color: white;
+    margin: 40px 20px 40px 60px;
+    padding: 30px;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    border-radius: 10px;
+}
+
+section.product img {
+    width: 265px;
+    height: 350px;
+}
+
+.container .imageBar {
+    list-style-type: none;
+    padding-right: 60px;
+}
+
+.container .sampleImages {
+    background-image: url(https://www.gamingdragons.com/images/game_img/eldenringxbl.jpg);
+    background-size:cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+div.about {
+    padding-left: 30px ;
+    padding-top: 45px;
+}
+
+div.about h2 {
+    padding-bottom: 30px;
+}
+
+div.about p {
+    text-align: justify;
+}
+
+div.about ul.share {
+    list-style-type: none;
+    display: flex;
+    padding-top: 30px;
+    align-items:center;
+    justify-content: center;
+}
+
+div.about ul li {
+    margin-inline: 10px;
+}
+
+div .share img {
+    width: 30px;
+    height: 30px;
+}
+
+section.productPrice {
+    background-color: white;
+    height: 70vh;
+    width: 25vw;
+    padding: 30px;
+    margin: 40px 60px 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section.productPrice h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section.productPrice p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+section.productPrice img {
+    height: 27px;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+form.frete{
+    margin-bottom: 30px;
+}
+
+form.frete input {
+    text-align: center;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#297C9F;
+}
+
+form.frete button {
+    width: 65px;
+    font-size: 15px;
+    border: 1px solid #297C9F;
+    border-radius: 5px;
+    background-color: #297C9F
+}
+
+section.productPrice form.buy button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #021e34;
+    border: 1px solid #021e34;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+
+/* header {
     height: 85px;
     background-color: #021E34;
     display: flex;
@@ -84,8 +275,6 @@ header p {
     margin-top: 8px;
     margin-inline: 40px;
 }
-
-/* Main */
 
 #product {
     display: flex;

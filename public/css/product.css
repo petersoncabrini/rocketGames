@@ -8,12 +8,13 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     background-color:#d4d3d3;
 }
 
 header section{
     height: 10vh;
+    width: 100%;
     background-color: #021e34;
     display: flex;
     align-items: center;
@@ -64,6 +65,7 @@ header section .shoppingCar {
 
 nav {
     height: 4vh;
+    width: 100%;
     background-color: #297C9F;
 }
 
@@ -79,7 +81,6 @@ nav ul a{
 
 section.product {
     height: 70vh;
-    width: 100vw;
     display: flex;
 }
 
@@ -88,7 +89,6 @@ div.container {
     margin: 40px 20px 40px 60px;
     padding: 30px;
     height: 70vh;
-    width: 80vw;
     display: flex;
     border-radius: 10px;
 }
@@ -146,7 +146,6 @@ div .share img {
 section.productPrice {
     background-color: white;
     height: 70vh;
-    width: 25vw;
     padding: 30px;
     margin: 40px 60px 40px 40px;
     border-radius: 10px;
@@ -202,267 +201,27 @@ section.productPrice form.buy button {
     font-size: 1.1rem;
 }
 
+section.similarProducts {
+    height: 35vh;
+    width: 90vw;
+    padding: 30px;
+    margin: 80px 20px 40px 60px;
+    border-radius: 10px;
+    background-color: white;
+}
 
-/* header {
-    height: 85px;
-    background-color: #021E34;
+section.similarProducts ul {
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    color: #FFFFFF;
+    justify-content: space-around;
 }
 
-header p {
-    width: 100px;
+section.similarProducts p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-#logo {
-    width: 60px;
-    height: 60px;
-    margin-left: 40px;
-}
-
-#searchBar {
-    margin-left: 16px;
-    margin-right: 350px;
-}
-
-#searchBar input {
-    font-size: 15px;
-    width: 500px;
-    height: 30px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color:#297C9F;
-}
-
-#searchBar button {
-    font-size: 15px;
-    border-style: solid;
-    border-radius: 20px;
-    background-color: #ffffff;
-    border-color: #297C9F;
-}
-
-#avatarProfile {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-}
-
-#shoppingCar {
-    width: 40px;
-    height: 40px;
-    margin-right: 0px;
-    margin-left: 30px;
-}
-
-.navBar {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    height: 35px;
-    background-color: #297C9F;
-    margin-bottom: 30px;
-}
-
-.navBar ul {
-    margin: 0;
-    padding: 0;
-}
-
-.navBar a li {
-    display: inline-block;
-    margin-top: 8px;
-    margin-inline: 40px;
-}
-
-#product {
-    display: flex;
-}
-
-#imageProduct {
-    text-align: center;
-    background-color:#f2f2f2;
-    width: 600px;
-    height: 600px;
-    border-style: solid;
-    border-color:#f2f2f2;
-    border-radius: 25px;
-    margin-left: 30px;
-}
-
-#imageProduct p{
-    margin: auto;
-    font-size: 2rem;
-    font-weight: 900;
-}
-
-.cover {
-    margin-top: 20px;
-    margin-bottom: 25px;
-    width: 350px;
-    height: 450px;
-}
-
-.shareProduct {
-    background-color: #021E34;
-    color: #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
-    height: 40px;
-    font-size: 18px;
-    margin-top: 25px;
-}
-
-.shareProduct ul {
-    list-style: none;
-}
-
-.shareProduct li {
-    display: inline-block;
-    margin-inline: 10px;
-    margin-top: 10px;
-}
-
-.imagesBar{
-    margin-top: 80px;
-    margin-left: 40px;
-    height: 400px;
-    width: 200px;
-    background-color: #FFFFFF;
-    border: solid;
-    border-color: #021E34;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.imagesBar ul {
-    list-style: none;
-    padding: 25px;
-}
-
-.imagesBar li {
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-.productImages {
-    width: 140px;
-    height: 80px;
-}
-
-#payment {
-    background-color: #021E34;
-    width: 400px;
-    height: 600px;
-    border-style: solid;
-    border-color: #021E34;
-    border-radius: 25px;
-    margin-left: 30px;
-}
-
-#price {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    height: 80px;
-    width: 350px;
-    background-color:#FFFFFF;
-    border: solid;
-    border-radius: 25px;
-    font-size: 3rem;
-    color:#021E34;
-    text-align: center;;
-}
-
-#price p {
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-}
-
-#paymentMethods {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    height: 480px;
-    width: 370px;
-    background-color:#FFFFFF;
-    border: solid;
-    border-radius: 25px;
-    font-size: 3rem;
-    color: black;
-    text-align: center;
-}
-
-#paymentMethods p {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: -15px;
-}
-
-#paymentMethods img {
-    height: 30px;
-    width: 320px;
-    margin-bottom: -10px;
-}
-
-#frete {
-    margin-top: 40px;
-}
-
-#calcularFrete {
-    width: 100px;
-    border: solid;
-    border-radius: 25px;
-    background-color: #021E34;
-    border-color:#021E34;
-    color: #FFFFFF;
-}
-
-#cep {
-    height: 40px;
-    border: solid;
-    border-radius: 25px;
-    border-color: #021E34;
-    width: 200px;
-    margin-top: 20px;
-    font-size: 1.5rem;
-}
-
-#addShoppingCar {
-    margin-top: 80px;
-    border: solid;
-    border-radius: 25px;
-    background-color: #021E34;
-    border-color:#021E34;
-    color: #FFFFFF;
-    width: 300px;
-    height: 60px;
-    font-size: 1.5rem;
-}
-
-#similarProducts{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 1280px;
-    height: 270px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-}
-
-#similarProducts p{
-    font-size: 1.5rem;
-    margin-left: 20px;
-}
-
-#similarProducts li {
-    display: inline-block;
-    margin-inline-start: 40px;
-}
-
-#similarProducts img {
-    width: 150px;
-    height: 200px;
+section.similarProducts ul a li img{
+    width: 125px;
+    height: 125px;
 }

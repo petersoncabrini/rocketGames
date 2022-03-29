@@ -85,7 +85,11 @@ header{
 .dados-cliente{
   display: flex;
   margin-top: 20px;
+<<<<<<< HEAD
   margin-left: 3.2%;
+=======
+  margin-left: 5.6%;
+>>>>>>> 8a69873e82114ac64bafc526bc6bbd729b5cb59d
   height: 30em;
   
   

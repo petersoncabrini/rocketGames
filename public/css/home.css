@@ -75,23 +75,83 @@ header p {
 }
 
 .navBar ul {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    list-style-type: none;
+    width: 60%;
+    /* border: solid 1px red; */
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
 }
 
 .navBar a li {
     display: inline-block;
     margin-top: 8px;
     margin-inline: 40px;
+    
 }
 .slider img{
     display: block;
     margin: auto;
-    height: 300px;
+    height: 400px;
     width: 800px;
 
    
 }
 .slider li{
-    list-style: none
+    list-style: none;
+}
+ 
+.productimages{
+    display: flex;
+    justify-content:center;
+    
+
+}
+    #dying{
+        
+        width: 250px;
+        height: 250px;
+    }
+    #eldenring{
+        
+        width: 250px;
+        height: 250px;
+
+    }
+   #granturismo{
+   
+    width: 250px;
+    height: 250px;
+   }
+
+   .productlist{
+    padding: 100px;
+    list-style-type: none;
+   }
+   
+   
+.productbox{
+    text-align: center;
+    border:solid 1px;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+.productbox p{
+    font-weight: 600;
+}
+.purchasebutton{
+margin-bottom: 10px;
+background-color: #021E34;
+color: #FFFFFF;
+border-radius: 25px;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+.purchasebutton:hover{
+    background: red;
 }

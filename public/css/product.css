@@ -299,3 +299,40 @@ section.productInformation ul {
 section.productInformation ul li {
     margin-bottom: 10px;
 }
+
+.footerUl{
+    color: grey;
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer-wrapper{
+ /*   border: solid 1px red; */
+    display: flex;
+    padding: 10px 0px;
+    background-color: #021E34;
+    
+    
+}
+.footerDiv{
+    display:flex;
+}
+.socialIcon a{
+    margin: 0;
+    margin-left: -7px;
+
+
+}
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#contactLogo{
+    margin-left: -7px;
+}
+
+
+    #payLogo{
+    width: 300px;
+    }

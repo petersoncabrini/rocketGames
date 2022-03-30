@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     background-color:#d4d3d3;
 }
 
@@ -41,11 +41,12 @@ header section .searchBar button {
     font-size: 15px;
     border: 1px solid #297C9F;
     border-radius: 5px;
-    background-color: #297C9F
+    background-color: #297C9F;
+    color: white;
 }
 
 header section .searchBar button:hover {
-    color: white;
+    border: 2px solid white;
 }
 
 header section .avatarProfile {
@@ -85,12 +86,12 @@ nav ul {
 }
 nav ul a{
     text-decoration: none;
-    color: #021e34;
-    font-weight: bold;
+    color: white;
+    font-weight: 400;
 }
 
 nav ul a:hover{
-    color: white;
+    color: #021E34;
 }
 
 section.product {
@@ -211,11 +212,12 @@ form.frete button {
     font-size: 15px;
     border: 1px solid #297C9F;
     border-radius: 5px;
-    background-color: #297C9F
+    background-color: #297C9F;
+    color: white;
 }
 
 form.frete button:hover {
-    color: white;
+    border: 2px solid #021E34;
 }
 
 section.productPrice form.buy button {

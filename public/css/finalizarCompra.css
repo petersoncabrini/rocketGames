@@ -58,6 +58,8 @@ header{
   text-align: left;
   padding-left: 20px;
   text-decoration: none;
+  margin: auto;
+
 }
 
 .bloco2{
@@ -68,7 +70,7 @@ header{
   padding: 10px;
   text-align: left;
   padding-left: 20px;
-  
+  margin: auto;
 }
 
 .bloco3{
@@ -80,6 +82,7 @@ header{
   padding: 10px;
   text-align: left;
   padding-left: 20px;
+  margin: auto;
 }
 
 .dados-cliente{
@@ -87,16 +90,82 @@ header{
   margin-top: 20px;
 
 
-  margin-left: 3.2%;
+  margin-left: 2%;
+  margin-right: 2%;
 
 
   height: 30em; 
-  
-  
 }
 
+svg {
+  display: inline-flex;
+}
 
+.titulo1{
+  display: flex;
+  margin-top: 10px;
+}
 
+.titulo2{
+  display: flex;
+  margin-top: 10px;
+}
+
+.cartao img{
+    height: 27px;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.pix img{
+  height: 27px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.boleto img{
+  height: 35px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.titulo3{
+  display: flex;
+  margin-top: 10px;
+}
+
+.descricao{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.descricao2{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.descricao3{
+  margin-left: 70px;
+  margin-top: 09px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.form-check{
+  display: flex;
+}
+
+.descricao a{
+  color: black;
+}
 
 .tabela{
   background-color: #f2f2f2;
@@ -111,7 +180,7 @@ header{
   margin-top: auto;
   width: 75em;
   padding-bottom: 100px;
-  
+ 
   
 }
 

@@ -12,6 +12,8 @@ body {
     background-color:#d4d3d3;
 }
 
+/* ---------- hEADER ---------- */
+
 header section{
     height: 10vh;
     width: 100%;
@@ -72,6 +74,8 @@ header section .shoppingCar {
     width: 40px;
 }
 
+/* ---------- NAVBAR ---------- */
+
 nav {
     height: 4vh;
     width: 100%;
@@ -93,6 +97,8 @@ nav ul a{
 nav ul a:hover{
     color: #021E34;
 }
+
+/* ---------- PRODUCT COVER ---------- */
 
 section.product {
     height: 70vh;
@@ -168,6 +174,8 @@ div .share img:hover{
     border-radius: 5px;
 }
 
+/* ---------- PRICE AND PAYMENT METhODS ---------- */
+
 section.productPrice {
     background-color: white;
     height: 70vh;
@@ -236,6 +244,8 @@ section.productPrice form.buy button:hover{
     border: 3px solid #021e34;
 }
 
+/* ---------- SIMILAR PRODUCTS ---------- */
+
 section.similarProducts {
     height: 35vh;
     width: 90vw;
@@ -265,6 +275,8 @@ section.similarProducts ul a li img:hover{
     border: 3px solid #021e34;
     border-radius: 10px;
 }
+
+/* ---------- PRODUCT DESCRIPTION / INFORMATION ---------- */
 
 section.productDescription {
     height: 30vh;
@@ -302,21 +314,74 @@ section.productInformation ul li {
     margin-bottom: 10px;
 }
 
-.footerUl{
+/* ---------- FOOTER ---------- */
+
+footer {
+    width: 100%;
+    background-color: #021E34;
+    height: 40vh;
+    color: gray;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .footerTitles {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+footer section .footerTitles .linksContainer .links{
+    margin-top: 20px;
+}
+
+footer section .footerTitles .linksContainer .links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+footer section .footerTitles .linksContainer .networkLinks{
+    display: flex;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer .footerTitles h4 {
+    display: flex;
+    align-items: center;
+}
+
+footer .footerImg {
+    width: 35px;
+    margin-inline: 3px;
+}
+
+footer .paymentImg {
+    width: 300px;
+}
+
+
+
+
+
+/* .footerUl{
     color: grey;
     display:flex;
     width: 100%;
     flex-direction: column;
     list-style-type: none;
 }
+
 .footer-wrapper{
- /*   border: solid 1px red; */
     display: flex;
     padding: 10px 0px;
-    background-color: #021E34;
-    
-    
+    background-color: #021E34; 
 }
+
 .footerDiv{
     display:flex;
 }
@@ -337,4 +402,4 @@ li a{
 
     #payLogo{
     width: 300px;
-    }
+    } */

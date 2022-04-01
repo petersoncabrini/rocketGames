@@ -12,10 +12,20 @@ header{
 }
 
 @media (max-width: 800px){
-  .table-responsive {
-    display: block;
-    position: relative;
-    width: 100%;
+  .dados-cliente{
+    flex-direction: column;
+    display: inline-flex;
+  }
+
+  .bloco1{
+    margin-bottom: 50%;
+  }
+
+
+
+  .tabela {
+    
+    flex-direction: column;
   }
   
   .table-responsive thead,
@@ -47,6 +57,15 @@ header{
   display: inline-block;
 }
 
+}
+
+.botaofinalizar{
+  width: 350px;
+  text-align: center;
+  padding:  15px 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 .bloco1{
@@ -104,6 +123,7 @@ svg {
 .titulo1{
   display: flex;
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .titulo2{
@@ -167,6 +187,8 @@ svg {
   color: black;
 }
 
+
+
 .tabela{
   background-color: #f2f2f2;
   border-radius: 20px;
@@ -175,10 +197,9 @@ svg {
        -moz-border-radius: 10px;
             border-radius: 10px;
     overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: 3.5%;
   margin-top: auto;
-  width: 75em;
+  width: 78.4em;
   padding-bottom: 100px;
  
   
@@ -186,7 +207,7 @@ svg {
 
       
 .coluna2{
-  text-align: center;
+  text-align: right;
 }
 
 th, td {

@@ -1,17 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-* {
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color:#f2f2f2;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
+#dados2 {
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 1px;
+  border: black;
+  border: solid;
+  bottom: 50px;
+  
+  }
+#dados1 {
+  display:inline-block;
+  width: 1000px;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 1px;
+  border: black;
+  border: solid;
+  margin:-300;
+  
+  }
 
-/* --------------------- header ------------------------ */
+#dados {
+  display: inline-block;
+  width: 255px;
+  height: 700px;
+  background-color: aqua;
+  text-align: center;
+  border-radius: 1px;
+  border: black;
+  border: solid;
+
+}
 
 header {
     height: 85px;
@@ -20,9 +49,13 @@ header {
     align-items: center;
     color: #FFFFFF;
 }
-
 header p {
     width: 100px;
+    
+}
+header a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 #logo {
@@ -54,6 +87,61 @@ header p {
 }
 
 #avatarProfile {
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
 }
+
+#shoppingCar {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+#menu-h ul{
+    list-style: none;
+    padding: 0;
+    background-color: #297C9F;;
+    
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+
+}
+
+#menu-h ul li a:hover {
+      background-color: rgb(24, 139, 233);
+}
+
+.footerUl{
+    color: grey;
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer-wrapper{
+ /*   border: solid 1px red; */
+    display: flex;
+    padding: 10px 0px;
+    background-color: #021E34;
+    
+    
+}
+.footerDiv{
+    display:flex;
+}
+
+
+
+
+

@@ -67,9 +67,14 @@ header a{
 }
 
 #avatarProfile {
+<<<<<<< Updated upstream
     margin-right: 15px;
     width: 50px;
     height: 50px;
+=======
+    width: 10px;
+    height: 10px;
+>>>>>>> Stashed changes
 }
 
 #shoppingCar {

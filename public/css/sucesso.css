@@ -6,6 +6,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* --- HEADER ---*/
+
 header section{
     height: 10vh;
     width: 100%;
@@ -77,12 +79,13 @@ header section{
     text-decoration: none;
   }
   
-  section.product {
-    height: 70vh;
-    display: flex;
-  }
 
-  
+
+  /* --- MAIN ---*/
+
+.titulo{
+  text-align: center;
+}
 
 .produto{
     background: #021E34;
@@ -108,7 +111,7 @@ body {
 }
 
 main{
-    margin-top: 12%;
+    margin-top: 10%;
    
 }
 
@@ -117,11 +120,9 @@ main{
     color: #fff;
 }
 
-@media (max-width: 800px){ 
-    .produto{
-        box-sizing: border-box;
-    }    
-}
+
+/* --- FOOTER --- */
+
 
 footer {
     margin-top: 21%;
@@ -177,3 +178,13 @@ footer {
   .links{
       text-align: left;
   }
+
+  
+/* --- RESPONSIVIDADE --- */
+
+
+@media (max-width: 800px){ 
+  .produto{
+      box-sizing: border-box;
+  }    
+}

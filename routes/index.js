@@ -11,4 +11,12 @@ router.get('/product', (req, res) => {
   res.render("product")
 })
 
+router.get('/finalizarCompra', (req, res) => {
+  res.render("finalizarCompra")
+})
+
+router.get('/sucesso', (req, res) => {
+  res.render("sucesso")
+})
+
 module.exports = router;

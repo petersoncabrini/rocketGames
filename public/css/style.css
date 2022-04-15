@@ -1,8 +1,595 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+ 
+/* --- INICIO PAGINA SUCESSO ---*/
+
+/* --- HEADER ---*/
+
+header section{
+  height: 10vh;
+  width: 100%;
+  background-color: #021e34;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
 }
+
+header section .logo{
+  height: 50px;
+  width: 50px;
+}
+
+header section .searchBar input {
+  text-align: center;
+  font-size: 15px;
+  width: 500px;
+  height: 30px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color:#297C9F;
+}
+
+.links a{
+  color: #ffffff;
+}
+
+header section .searchBar button {
+  width: 80px;
+  font-size: 15px;
+  border: 1px solid #297C9F;
+  border-radius: 5px;
+  background-color: #297C9F
+}
+
+header section .avatarProfile {
+  height: 40px;
+  width: 40px;
+}
+
+header section .account {
+  margin-inline: -120px;
+  width: 100px;
+}
+
+header section a {
+  text-decoration: none;
+}
+
+header section .shoppingCar {
+  height: 40px;
+  width: 40px;
+}
+
+nav {
+  height: 4vh;
+  width: 100%;
+  background-color: #297C9F;
+}
+
+nav ul {
+  display: flex;
+  padding-top: 2px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav ul a{
+  text-decoration: none;
+}
+
+
+
+/* --- MAIN ---*/
+
+.titulo{
+text-align: center;
+}
+
+.produto{
+  background: #021E34;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35em
+}
+
+.flex{
+  display: flex;
+}
+
+body {
+  text-align: center;
+ 
+}
+
+main{
+  margin-top: 10%;
+ 
+}
+
+.espaco-topo{
+  margin-top: 100px;
+  color: #fff;
+}
+
+
+/* --- FOOTER --- */
+
+
+footer {
+  margin-top: 21%;
+  width: 100%;
+  background-color: #021E34;
+  height: auto;
+  color: gray;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .footerTitles {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  
+}
+
+footer section .footerTitles .linksContainer .links{
+  margin-top: 20px;
+}
+
+footer section .footerTitles .linksContainer .links a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5px;
+}
+
+footer section .footerTitles .linksContainer .networkLinks{
+  display: flex;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+footer .footerTitles h4 {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+}
+
+footer .footerImg {
+  width: 35px;
+  margin-inline: 3px;
+}
+
+footer .paymentImg {
+  width: 300px;
+}
+
+.links{
+    text-align: left;
+}
+
+/* --- FIM PAGINA SUCESSO ---*/
+
+
+/* --- INICIO PAGINA FINALIZAR COMPRA ---*/
+
+header{
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 800px){
+  .dados-cliente{
+    flex-direction: column;
+    display: inline-flex;
+  }
+
+  .bloco1{
+    margin-bottom: 50%;
+  }
+
+
+
+  .tabela {
+    
+    flex-direction: column;
+  }
+  
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+
+.table-responsive td,
+.table-responsive th {
+  height: 35px;
+}
+
+.table-responsive thead {
+  float: left;
+}
+
+.table-responsive tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.table-responsive tbody tr {
+  display: inline-block;
+}
+
+}
+
+.botaofinalizar{
+  width: 350px;
+  text-align: center;
+  padding:  15px 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+
+.bloco1{
+  background-color: #f2f2f2;
+  width: 25em;
+  border-radius: 8px;
+  border: solid 1px #f2f2f2;
+  padding: 10px;
+  text-align: left;
+  padding-left: 20px;
+  text-decoration: none;
+  margin: auto;
+
+}
+
+.bloco2{
+  background-color: #f2f2f2;
+  margin-left: 10px;
+  border-radius: 8px;
+  width: 25em;
+  padding: 10px;
+  text-align: left;
+  padding-left: 20px;
+  margin: auto;
+}
+
+.bloco3{
+  background-color: #f2f2f2;
+  width: 375px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: solid 1px #f2f2f2;
+  padding: 10px;
+  text-align: left;
+  padding-left: 20px;
+  margin: auto;
+}
+
+.dados-cliente{
+  display: flex;
+  margin-top: 20px;
+
+
+  margin-left: 2%;
+  margin-right: 2%;
+
+
+  height: 30em; 
+}
+
+svg {
+  display: inline-flex;
+}
+
+.titulo1{
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.titulo2{
+  display: flex;
+  margin-top: 10px;
+}
+
+.cartao img{
+    height: 27px;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.pix img{
+  height: 27px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.boleto img{
+  height: 35px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.titulo3{
+  display: flex;
+  margin-top: 10px;
+}
+
+.descricao{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.descricao2{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.descricao3{
+  margin-left: 70px;
+  margin-top: 09px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.form-check{
+  display: flex;
+}
+
+.descricao a{
+  color: black;
+}
+
+
+
+.tabela{
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  border-collapse: collapse;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    overflow: hidden;
+    margin-left: 3.5%;
+  margin-top: auto;
+  width: 78.4em;
+  padding-bottom: 100px;
+ 
+  
+}
+
+      
+.coluna2{
+  text-align: right;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+        
+}
+      
+tr:nth-child(even){
+  background-color: #ffffff;
+        
+}
+      
+th {
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+        
+}
+
+header section{
+  height: 10vh;
+  width: 100%;
+  background-color: #021e34;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+header section .logo{
+  height: 50px;
+  width: 50px;
+}
+
+header section .searchBar input {
+  text-align: center;
+  font-size: 15px;
+  width: 500px;
+  height: 30px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color:#297C9F;
+}
+
+.links a{
+  color: #ffffff;
+}
+
+header section .searchBar button {
+  width: 80px;
+  font-size: 15px;
+  border: 1px solid #297C9F;
+  border-radius: 5px;
+  background-color: #297C9F
+}
+
+header section .avatarProfile {
+  height: 40px;
+  width: 40px;
+}
+
+header section .account {
+  margin-inline: -120px;
+  width: 100px;
+}
+
+header section a {
+  text-decoration: none;
+}
+
+header section .shoppingCar {
+  height: 40px;
+  width: 40px;
+}
+
+nav {
+  height: 4vh;
+  width: 100%;
+  background-color: #297C9F;
+}
+
+nav ul {
+  display: flex;
+  padding-top: 2px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav ul a{
+  text-decoration: none;
+}
+
+section.product {
+  height: 70vh;
+  display: flex;
+}
+
+
+@media (max-width: 800px){
+  .table-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+
+.table-responsive td,
+.table-responsive th {
+  height: 35px;
+}
+
+.table-responsive thead {
+  float: left;
+}
+
+.table-responsive tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.table-responsive tbody tr {
+  display: inline-block;
+}
+
+.dados-cliente{
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+
+.bloco1{
+  margin-bottom: 10px;
+}
+
+.bloco2{
+  margin-bottom: 10px;
+}
+
+
+
+}
+
+footer {
+  margin-top: 15%;
+  width: 100%;
+  background-color: #021E34;
+  height: auto;
+  color: gray;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .footerTitles {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  
+}
+
+footer section .footerTitles .linksContainer .links{
+  margin-top: 20px;
+}
+
+footer section .footerTitles .linksContainer .links a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5px;
+}
+
+footer section .footerTitles .linksContainer .networkLinks{
+  display: flex;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+footer .footerTitles h4 {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+}
+
+footer .footerImg {
+  width: 35px;
+  margin-inline: 3px;
+}
+
+footer .paymentImg {
+  width: 300px;
+}
+
+
+/* --- FIM PAGINA FINALIZAR COMPRA ---*/

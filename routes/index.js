@@ -19,4 +19,8 @@ router.get('/sucesso', (req, res) => {
   res.render("sucesso")
 })
 
+router.get('/login', (req, res) => {
+  res.render("login")
+})
+
 module.exports = router;

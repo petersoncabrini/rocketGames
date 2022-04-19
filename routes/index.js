@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const ProductController = require ('../controllers/ProductController')
-
+const HomeController = require ('../controllers/HomeController')
 /* GET home page. */
 router.get('/', (req, res) => {
   res.render("Página Home")

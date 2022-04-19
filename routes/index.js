@@ -3,9 +3,9 @@ var router = express.Router();
 const ProductController = require ('../controllers/ProductController')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', (req, res) => {
+  res.render("Página Home")
+})
 
 router.get('/product', (req, res) => {
   res.render("product")

@@ -22,6 +22,7 @@ header section{
   display: flex;
   align-items: center;
   justify-content:space-around;
+  text-align: center;
 }
 
 header section .logo{
@@ -57,13 +58,9 @@ header section .avatarProfile {
   width: 40px;
 }
 
-header section .account {
-  margin-inline: -120px;
-  width: 100px;
-}
-
 header section a {
   text-decoration: none;
+  width: 100px;
 }
 
 header section a:visited{
@@ -77,18 +74,22 @@ header section .shoppingCar {
 
 /* ---------- NAVBAR ---------- */
 
-nav {
+/* nav {
   height: 4vh;
   width: 100%;
   background-color: #297C9F;
-}
+  display: flex;
+  align-items: center;
+} */
 
 nav ul {
+  text-align: center;
   display: flex;
-  padding-top: 2px;
+  align-items: center;
   justify-content: space-around;
   list-style-type: none;
 }
+
 nav ul a{
   text-decoration: none;
   color: white;
@@ -104,10 +105,11 @@ nav ul a:hover{
 section.product {
   margin-top: -100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.productContainer {
-  height: 70vh;
   background-color: white;
   display: flex;
   align-items: center;
@@ -177,7 +179,6 @@ div .share img:hover{
 
 section.productPrice {
   background-color: white;
-  height: 70vh;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
@@ -304,59 +305,6 @@ section.productInformation ul {
 section.productInformation ul li {
   margin-bottom: 10px;
 }
-
-/* ---------- FOOTER ---------- */
-
-footer {
-  width: 100%;
-  background-color: #021E34;
-  height: 40vh;
-  color: gray;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer .footerTitles {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-}
-
-footer section .footerTitles .linksContainer .links{
-  margin-top: 20px;
-}
-
-footer section .footerTitles .linksContainer .links a{
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-bottom: 5px;
-}
-
-footer section .footerTitles .linksContainer .networkLinks{
-  display: flex;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-footer .footerTitles h4 {
-  display: flex;
-  align-items: center;
-}
-
-footer .footerImg {
-  width: 35px;
-  margin-inline: 3px;
-}
-
-footer .paymentImg {
-  width: 300px;
-}
-
-
-
 
 
 /* .footerUl{
@@ -956,11 +904,6 @@ header section .avatarProfile {
   width: 40px;
 }
 
-header section .account {
-  margin-inline: -120px;
-  width: 100px;
-}
-
 header section a {
   text-decoration: none;
 }
@@ -1027,63 +970,9 @@ main{
   color: #fff;
 }
 
-
-/* --- FOOTER --- */
-
-
-footer {
-  margin-top: 21%;
-  width: 100%;
-  background-color: #021E34;
-  height: auto;
-  color: gray;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer .footerTitles {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-  
-}
-
-footer section .footerTitles .linksContainer .links{
-  margin-top: 20px;
-}
-
-footer section .footerTitles .linksContainer .links a{
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-bottom: 5px;
-}
-
-footer section .footerTitles .linksContainer .networkLinks{
-  display: flex;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-footer .footerTitles h4 {
-  display: flex;
-  align-items: center;
-  margin-left: 15%;
-}
-
-footer .footerImg {
-  width: 35px;
-  margin-inline: 3px;
-}
-
-footer .paymentImg {
-  width: 300px;
-}
-
 .links{
-    text-align: left;
+  text-align: left;
+  margin-left: -30px;
 }
 
 /* --- FIM PAGINA SUCESSO ---*/
@@ -1354,11 +1243,6 @@ header section .avatarProfile {
   width: 40px;
 }
 
-header section .account {
-  margin-inline: -120px;
-  width: 100px;
-}
-
 header section a {
   text-decoration: none;
 }
@@ -1439,16 +1323,14 @@ section.product {
 .bloco2{
   margin-bottom: 10px;
 }
-
-
-
 }
+
+/* --- FOOTER --- */
 
 footer {
   margin-top: 15%;
   width: 100%;
   background-color: #021E34;
-  height: auto;
   color: gray;
 }
 
@@ -1459,36 +1341,40 @@ footer ul {
 footer .footerTitles {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
-  
+  padding: 20px;
+}
+
+footer .footerTitles h4 {
+  font-size: 18px;
 }
 
 footer section .footerTitles .linksContainer .links{
-  margin-top: 20px;
+  font-size: 16px;
 }
 
 footer section .footerTitles .linksContainer .links a{
   display: block;
   text-decoration: none;
   color: white;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 footer section .footerTitles .linksContainer .networkLinks{
   display: flex;
+  align-items: center;
+  justify-content:flex-start;
   text-decoration: none;
-  margin-top: 20px;
+  margin-left: -30px;
 }
 
 footer .footerTitles h4 {
   display: flex;
   align-items: center;
-  margin-left: 15%;
+  justify-content:flex-start;
 }
 
 footer .footerImg {
   width: 35px;
-  margin-inline: 3px;
 }
 
 footer .paymentImg {

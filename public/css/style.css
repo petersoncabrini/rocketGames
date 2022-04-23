@@ -9,15 +9,18 @@
 
 /* --- INICIO PAGINA PRODUTO ---*/
 
+main {
+  margin-bottom: -200px;
+}
+
 body {
   max-width: 100%;
   background-color:#d4d3d3;
 }
 
-/* ---------- hEADER ---------- */
+/* ---------- header ---------- */
 
 header section{
-  height: 10vh;
   width: 100%;
   background-color: #021e34;
   display: flex;
@@ -100,65 +103,63 @@ nav ul a:hover{
   color: #021E34;
 }
 
-/* ---------- PRODUCT COVER ---------- */
+/* ---------- PRODUCT  ---------- */
 
 section.product {
-  height: 70vh;
+  margin-top: -100px;
   display: flex;
 }
 
-div.container {
-  background-color: white;
-  margin: 40px 20px 40px 60px;
-  padding: 30px;
+div.productContainer {
   height: 70vh;
+  background-color: white;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   border-radius: 10px;
 }
 
-section.product img {
+section.product img.cover {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
   width: 265px;
   height: 350px;
 }
 
-.container .imageBar {
+.productContainer .imageBar {
   list-style-type: none;
-  padding-right: 60px;
 }
 
-.container .sampleImages {
+.productContainer .sampleImages {
   background-image: url(https://www.gamingdragons.com/images/game_img/eldenringxbl.jpg);
   background-repeat:no-repeat;
   background-size:contain;
   background-position: center;
   width: 70px;
   height: 70px;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
-.container .sampleImages:hover {
+.productContainer .sampleImages:hover {
   border-radius: 10px;
   border: 2px solid black;
 }
 
-div.about {
-  padding-left: 30px ;
-  padding-top: 45px;
-}
-
 div.about h2 {
-  padding-bottom: 30px;
+  margin-left: 20px;
 }
 
 div.about p {
+  margin: 20px;
   text-align: justify;
 }
 
 div.about ul.share {
   list-style-type: none;
   display: flex;
-  padding-top: 30px;
   align-items:center;
+  text-align: center;
   justify-content: center;
 }
 
@@ -182,7 +183,6 @@ section.productPrice {
   background-color: white;
   height: 70vh;
   padding: 30px;
-  margin: 40px 60px 40px 40px;
   border-radius: 10px;
   text-align: center;
 }
@@ -249,10 +249,7 @@ section.productPrice form.buy button:hover{
 /* ---------- SIMILAR PRODUCTS ---------- */
 
 section.similarProducts {
-  height: 35vh;
-  width: 90vw;
   padding: 30px;
-  margin: 80px 20px 40px 60px;
   border-radius: 10px;
   background-color: white;
 }
@@ -281,10 +278,7 @@ section.similarProducts ul a li img:hover{
 /* ---------- PRODUCT DESCRIPTION / INFORMATION ---------- */
 
 section.productDescription {
-  height: 30vh;
-  width: 90vw;
   padding: 30px;
-  margin: 20px 20px 40px 60px;
   border-radius: 10px;
   background-color: white;
   align-items: center;
@@ -296,10 +290,7 @@ section.productDescription h1 {
 }
 
 section.productInformation {
-  height: 50vh;
-  width: 90vw;
   padding: 30px;
-  margin: 20px 20px 40px 60px;
   border-radius: 10px;
   background-color: white;
 }

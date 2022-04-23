@@ -9,10 +9,6 @@
 
 /* --- INICIO PAGINA PRODUTO ---*/
 
-main {
-  margin-bottom: -200px;
-}
-
 body {
   max-width: 100%;
   background-color:#d4d3d3;
@@ -185,6 +181,7 @@ section.productPrice {
   padding: 30px;
   border-radius: 10px;
   text-align: center;
+  margin: 10px;
 }
 
 section.productPrice h1 {
@@ -293,6 +290,7 @@ section.productInformation {
   padding: 30px;
   border-radius: 10px;
   background-color: white;
+  margin-bottom: -180px;
 }
 
 section.productInformation h1 {

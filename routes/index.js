@@ -28,5 +28,9 @@ router.get('/productlist', (req, res) => {
   res.render("productlist")
 })
 
+router.get('/painel', (req, res) => {
+  res.render("painel")
+})
+
 
 module.exports = router;

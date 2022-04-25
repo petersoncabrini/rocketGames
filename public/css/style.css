@@ -6,7 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* --- INICIO PAGINA PAINEL ---*/
+/* --- INICIO PAGINA PAINEL --
+
+
 
 
 @media (max-width: 800px){
@@ -326,7 +328,7 @@ header a{
   list-style-type: none;
 }
 .footer-wrapper{
-/*   border: solid 1px red; */
+/*   border: solid 1px red; 
   display: flex;
   padding: 10px 0px;
   background-color: #021E34;
@@ -336,6 +338,8 @@ header a{
 .footerDiv{
   display:flex;
 }
+
+
 
 /* --- FIM PAGINA PAINEL ---*/
 

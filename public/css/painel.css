@@ -4,79 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-}
-@media (max-width: 800px){
-    .dados-cliente{
-      flex-direction: column;
-      display: inline-flex;
-    }
-  
-    .bloco1{
-      margin-bottom: 50%;
-    }
-  
-  
-  
-    .tabela {
-      
-      flex-direction: column;
-    }
-    
-    .table-responsive thead,
-    .table-responsive tbody,
-    .table-responsive th,
-    .table-responsive td,
-    .table-responsive tr {
-      display: block;
-    }
-  
-  .table-responsive td,
-  .table-responsive th {
-    height: 35px;
-  }
-  
-  .table-responsive thead {
-    float: left;
-  }
-  
-  .table-responsive tbody {
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-  }
-  
-  .table-responsive tbody tr {
-    display: inline-block;
-  }
-  
-  }
-  
-  .botaofinalizar{
-    width: 350px;
-    text-align: center;
-    padding:  15px 20px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    font-size: 18px;
-  }
-  
-  .bloco1{
-      display: flex;
-    background-color: #f2f2f2;
-    width: 20em;
-    height: 20em;
-    border-radius: 8px;
-    border: solid 1px #f2f2f2;
-    padding: 10px;
-    text-align: left;
-    padding-left: 20px;
-    text-decoration: none;
-    margin: auto;
-    text-align: center;
-  
-  }
+}  
+
   
   .bloco2{
       display:block;
@@ -306,8 +235,7 @@ header a{
     padding: 20px;
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
-
+  
 }
 
 #menu-h ul li a:hover {

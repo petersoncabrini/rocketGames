@@ -1,13 +1,19 @@
+/* --- 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-}
+}  
+
+ --- */
 
 /* --- HEADER ---*/
 
+
+/* --- 
 header section{
     height: 10vh;
     width: 100%;
@@ -79,9 +85,9 @@ header section{
     text-decoration: none;
   }
   
+---*/
 
-
-  /* --- MAIN ---*/
+  /* --- MAIN
 
 .titulo{
   text-align: center;
@@ -121,7 +127,7 @@ main{
 }
 
 
-/* --- FOOTER --- */
+/* --- FOOTER 
 
 
 footer {
@@ -180,7 +186,7 @@ footer {
   }
 
   
-/* --- RESPONSIVIDADE --- */
+/* --- RESPONSIVIDADE 
 
 
 @media (max-width: 800px){ 
@@ -188,3 +194,4 @@ footer {
       box-sizing: border-box;
   }    
 }
+

@@ -24,4 +24,9 @@ router.get('/login', (req, res) => {
   res.render("login")
 })
 
+router.get('/productlist', (req, res) => {
+  res.render("productlist")
+})
+
+
 module.exports = router;

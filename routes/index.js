@@ -4,7 +4,7 @@ const ProductController = require ('../controllers/ProductController')
 const HomeController = require ('../controllers/HomeController')
 
 /* GET home page. */
-router.get('/', (req, res) => {
+router.get('/home', (req, res) => {
   res.render("home")
 })
 

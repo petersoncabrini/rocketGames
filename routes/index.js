@@ -32,5 +32,8 @@ router.get('/painel', (req, res) => {
   res.render("painel")
 })
 
+router.get('/carrinho', (req, res) => {
+  res.render("carrinho")
+})
 
 module.exports = router;

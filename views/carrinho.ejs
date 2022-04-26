@@ -1,0 +1,72 @@
+<%- include('./partials/header') %>
+
+<section class="carrinho">
+    <div class="titlecarrinho">
+        <h5>Clique em finalizar compra para efetuar seu pedido!</h5>
+    </div>    
+
+    <table class="tabela">
+        <tr>
+          <th>Produto</th>
+          <th class="coluna2">Preço Unitário</th>
+          <th class="coluna2">Quantidade</th>
+          <th class="coluna2">Subtotal</th>
+          <th class="coluna2">Excluir</th>
+        </tr>
+        <tr>
+          <td class="gta"> <img src="/img/gta5.png" alt="Gta5"> </width:> GTA 5 - Grand Theft auto V </td>
+          <td class="coluna2">R$ 100,00</td>
+          <td class="coluna2">1</td>
+          <td class="coluna2">R$ 100,00</td>
+          <td class="coluna2"><a href="lixeira"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+          </svg></a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="coluna2"></td>
+          <td class="coluna2"></td>
+          <td class="coluna2"></td>
+          <td class="coluna2">Subtotal: <b>R$ 100,00</b> </td>
+        </tr>
+        <tr>
+            
+          <td>
+              
+            <form class="row g-1">
+                <div class="col-md-6"> 
+                    <label for="inputPassword4" class="form-label">Calcule o Frete:</label>
+                  <input type="text" class="form-control" id="" placeholder="Digite seu CEP">
+                </div>
+                <div > 
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                         Calcular
+                      </button>
+              </form><br>
+        
+        </td>           
+
+          <td class="coluna2"></td>
+          <td class="coluna2"></td>
+          <td class="coluna2"></td>
+          <td class="coluna2"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="coluna2"> <b></b> </td>
+          <td class="coluna2"> <b></b> </td>
+          <td class="coluna2"> <b>Total da Compra:</b> </td>
+          <td class="coluna2"> <b>R$ 100,00</b> </td>
+        </tr>
+      </table>
+</section>
+
+<div class="botões">
+<button type="button" class="btn btn-secondary">Continuar Comprando</button>
+<button type="button" class="btn btn-primary">Finalizar Compra</button>
+</div>
+
+
+
+<%- include('./partials/footer') %>

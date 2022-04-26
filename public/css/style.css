@@ -7,7 +7,6 @@
 }
 
 
-
 /* --- INICIO PAGINA PRODUTO ---*/
 
 body {
@@ -1245,6 +1244,7 @@ svg {
   margin: auto;
   width: 90%;
   padding-bottom: 100px;
+  
 
  
   
@@ -1526,3 +1526,31 @@ footer .paymentImg {
 
 
 /* --- FIM PAGINA PRODUCT LIST ---*/
+
+
+/* --- INICIO PAGINA CARRINHO ---*/
+
+.gta img{
+  max-width:100px;
+  max-height:80px;
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+
+}
+
+.titlecarrinho{
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-bottom: 5%;
+
+}
+
+
+form row-g1{
+  margin-top: 100px;
+}
+
+.botões{
+  margin-left: 71%;
+}

@@ -393,15 +393,17 @@ header section .searchBar button:hover {
 header section .avatarProfile {
   height: 40px;
   width: 40px;
+  margin-right: -280px;
 }
 
 header section a {
   text-decoration: none;
   width: 100px;
+  color: white;
 }
 
 header section a:visited{
-  color: white;
+  color:white
 }
 
 header section .shoppingCar {
@@ -419,6 +421,13 @@ header section .shoppingCar {
   align-items: center;
 } */
 
+/* ---------- HOME ---------- */
+
+.home {
+  margin: 0;
+  padding: 0;
+  background-color:#d3d3d3;
+}
 nav ul {
   text-align: center;
   display: flex;
@@ -436,7 +445,60 @@ nav ul a{
 nav ul a:hover{
   color: #021E34;
 }
+.slider img{
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 800px;
+  border-radius: 25px;
+}
+.slider li{
+  list-style: none;
+}
 
+.productimages{
+display: flex;
+justify-content:center;
+}
+#dying{
+      
+      width: 250px;
+      height: 250px;
+  }
+#eldenring{
+      width: 250px;
+      height: 250px;
+}
+#granturismo{
+  width: 250px;
+  height: 250px;
+}
+
+.productlist{
+  padding: 100px;
+  list-style-type: none;
+}
+ 
+ 
+.productbox{
+  text-align: center;
+  border:solid 2px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.productbox p{
+  font-weight: 600;
+}
+.purchasebutton{
+margin-bottom: 10px;
+background-color: #021E34;
+color: #FFFFFF;
+border-radius: 25px;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
 /* ---------- PRODUCT  ---------- */
 
 section.product {
@@ -1661,6 +1723,73 @@ section.product {
   margin-bottom: 10px;
 }
 }
+/* --- Listagem de Produtos ---*/
+.productresult{
+  display: flex;
+  
+
+}
+
+.productresultli{
+  margin-left: 10px;
+  margin-top: -20px;
+  display: inline-block;
+}
+.ali{
+  color:rgb(66, 65, 65);
+}
+.resultfilter{
+  display: flex;
+  margin-left: 1000px;
+  font-size: 15px;
+  
+}
+.productimages{
+  
+  margin-left: -100px;
+
+ 
+ }
+ #dying{
+        
+         width:210px;
+         height:170px;
+     }
+ #eldenring{
+         width:210px;
+         height:170px;
+ }
+ #granturismo{
+     width:210px;
+     height:170px;
+ }
+ 
+ .productlist{
+     padding: 50px;
+     list-style-type: none;
+     margin-left: 40px;
+ }
+    
+    
+ .productbox{
+     text-align: center;
+     border:solid 2px;
+     border-radius: 25px;
+     overflow: hidden;
+     background-color: #FFFFFF;
+ }
+ .productbox p{
+     font-weight: 600;
+ }
+ .purchasebutton{
+ margin-bottom: 10px;
+ background-color: #021E34;
+ color: #FFFFFF;
+ border-radius: 25px;
+ border: none;
+ padding: 10px;
+ cursor: pointer;
+ }
 
 /* --- FOOTER --- */
 

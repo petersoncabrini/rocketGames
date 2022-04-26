@@ -3,14 +3,9 @@ var router = express.Router();
 const ProductController = require ('../controllers/ProductController')
 const HomeController = require ('../controllers/HomeController')
 
-/* GET home page. */
-router.get('/home', (req, res) => {
-  res.render("home")
-})
 
-router.get('/product', (req, res) => {
-  res.render("product")
-})
+router.get('/home', HomeController.apresentar) 
+
 
 router.get('/finalizarCompra', (req, res) => {
   res.render("finalizarCompra")

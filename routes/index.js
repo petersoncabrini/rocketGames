@@ -6,6 +6,8 @@ const HomeController = require ('../controllers/HomeController')
 
 router.get('/home', HomeController.apresentar) 
 
+router.get('/product', ProductController.product) 
+
 
 router.get('/finalizarCompra', (req, res) => {
   res.render("finalizarCompra")

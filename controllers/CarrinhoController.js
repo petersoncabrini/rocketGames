@@ -1,6 +1,6 @@
 const CarrinhoController = {
-    index: function(req, res){
-        res.send(carrinho);
+    carrinho: function(req, res){
+        res.render('carrinho');
     }
 }
 

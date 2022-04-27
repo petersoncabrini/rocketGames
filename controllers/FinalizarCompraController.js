@@ -1,6 +1,6 @@
 const FinalizarCompraController = {
-    index: function(req, res){
-        res.send(finalizarCompra);
+    finalizarCompra: function(req, res){
+        res.render('finalizarCompra');
     }
 }
 

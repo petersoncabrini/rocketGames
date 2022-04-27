@@ -1,6 +1,6 @@
 const LoginCompraController = {
-    index: function(req, res){
-        res.send(login);
+    login: function(req, res){
+        res.render('login');
     }
 }
 

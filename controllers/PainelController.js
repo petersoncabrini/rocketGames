@@ -1,6 +1,6 @@
 const PainelController = {
-    index: function(req, res){
-        res.send(painel);
+    painel: function(req, res){
+        res.render('painel');
     }
 }
 

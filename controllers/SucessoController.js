@@ -1,6 +1,6 @@
 const SucessoController = {
-    index: function(req, res){
-        res.send(sucesso);
+    sucesso: function(req, res){
+        res.render('sucesso')
     }
 }
 

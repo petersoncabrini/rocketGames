@@ -7,20 +7,23 @@ const SucessoController = require ('../controllers/SucessoController')
 const LoginController = require ('../controllers/LoginController')
 const Painelontroller = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
-router.get('/home', HomeController.index) 
+const ProductListController = require ('../controllers/ProductListController')
+
+
+router.get('/home', HomeController.home) 
 
 router.get('/product', ProductController.product) 
 
-router.get('/finalizarcompra', FinalizarCompraController.index) 
+router.get('/finalizarcompra', FinalizarCompraController.finalizarCompra) 
 
-router.get('/sucesso', SucessoController.index) 
+router.get('/sucesso', SucessoController.sucesso) 
 
-router.get('/login', LoginController.index) 
+router.get('/login', LoginController.login) 
 
-router.get('/productlist', ProductListController.index) 
+router.get('/productlist', ProductListController.productList) 
 
-router.get('/painel', PainelController.index) 
+router.get('/painel', Painelontroller.painel) 
 
-router.get('/carrinho', CarrinholController.index) 
+router.get('/carrinho', CarrinhoController.carrinho) 
 
 module.exports = router;

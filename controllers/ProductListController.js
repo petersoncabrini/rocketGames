@@ -1,7 +1,7 @@
-const ProductList = {
-    index: function(req, res){
-        res.send(productlist);
+const ProductListController = {
+    productList: function(req, res){
+        res.render('productlist');
     }
 }
 
-module.exports = ProductListController;
+module.exports = ProductListController

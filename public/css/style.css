@@ -931,7 +931,7 @@ li a{
 
 /* --- INICIO PAGINA SUCESSO ---*/
 
-/* --- HEADER ---*/
+/* --- HEADER ---
 
 header section{
   height: 10vh;
@@ -997,7 +997,9 @@ nav ul {
 }
 nav ul a{
   text-decoration: none;
-}
+} 
+
+--- */
 
 
 
@@ -1023,6 +1025,7 @@ text-align: center;
 
 .flex{
   display: flex;
+  margin-bottom: 15%;
 }
 
 body {
@@ -1124,6 +1127,7 @@ header{
   text-decoration: none;
   margin: auto;
   margin-right: 8px;
+  border: solid 1px rgb(149, 208, 235);;
 
 }
 
@@ -1137,6 +1141,7 @@ header{
   padding-left: 20px;
   margin: auto;
   margin-right: 8px;
+  border: solid 1px rgb(149, 208, 235);;
 }
 
 .bloco3{
@@ -1144,7 +1149,7 @@ header{
   width: 375px;
   margin-left: 10px;
   border-radius: 8px;
-  border: solid 1px #f2f2f2;
+  border: solid 1px rgb(149, 208, 235);;
   padding: 10px;
   text-align: left;
   padding-left: 20px;
@@ -1234,7 +1239,7 @@ svg {
 
 
 .tabela{
-  background-color: #f2f2f2;
+  background-color: rgb(149, 208, 235);
   border-radius: 20px;
   border-collapse: collapse;
     -webkit-border-radius: 10px;
@@ -1267,10 +1272,12 @@ tr:nth-child(even){
 }
       
 th {
-  background-color: #f2f2f2;
+  background-color: rgb(149, 208, 235);
   color: rgb(0, 0, 0);
         
 }
+
+
 
 header section{
   height: 10vh;
@@ -1342,6 +1349,7 @@ section.product {
   height: 70vh;
   display: flex;
 }
+
 
 
 @media (max-width: 800px){
@@ -1471,7 +1479,7 @@ section.product {
 /* --- FOOTER --- */
 
 footer {
-  margin-top: 15%;
+  margin-top: auto;
   width: 100%;
   background-color: #021E34;
   color: gray;
@@ -1545,8 +1553,45 @@ footer .paymentImg {
 
 }
 
-
-
-.botões{
-  margin-left: 71%;
+.botões {
+  margin-top: 25px;
+  margin-left: 70.5%;
+  display: flex;
+  margin-bottom: 5%;
+  
 }
+
+.botao1{
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+
+.tabelacarrinho{
+  background-color: rgb(149, 208, 235);
+  border-radius: 20px;
+  border-collapse: collapse;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+  margin: auto;
+  width: 90%;
+  padding-bottom: 100px;
+  box-shadow: 2px 2px 2px 2px rgb(157, 160, 161);
+  
+}
+
+.fretecarrinho {
+ 
+  width: 15px;
+}
+
+
+.coluna5{
+  text-align: center;
+ 
+
+}
+
+

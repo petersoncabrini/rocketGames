@@ -1,36 +1,26 @@
 var express = require('express');
 var router = express.Router();
-const ProductController = require ('../controllers/ProductController')
 const HomeController = require ('../controllers/HomeController')
-
-
-router.get('/home', HomeController.apresentar) 
+const ProductController = require ('../controllers/ProductController')
+const FinalizarCompraController = require ('../controllers/FinalizarCompraController')
+const SucessoController = require ('../controllers/SucessoController')
+const LoginController = require ('../controllers/LoginController')
+const Painelontroller = require ('../controllers/PainelController')
+const CarrinhoController = require ('../controllers/CarrinhoController')
+router.get('/home', HomeController.index) 
 
 router.get('/product', ProductController.product) 
 
+router.get('/finalizarcompra', FinalizarCompraController.index) 
 
-router.get('/finalizarCompra', (req, res) => {
-  res.render("finalizarCompra")
-})
+router.get('/sucesso', SucessoController.index) 
 
-router.get('/sucesso', (req, res) => {
-  res.render("sucesso")
-})
+router.get('/login', LoginController.index) 
 
-router.get('/login', (req, res) => {
-  res.render("login")
-})
+router.get('/productlist', ProductListController.index) 
 
-router.get('/productlist', (req, res) => {
-  res.render("productlist")
-})
+router.get('/painel', PainelController.index) 
 
-router.get('/painel', (req, res) => {
-  res.render("painel")
-})
-
-router.get('/carrinho', (req, res) => {
-  res.render("carrinho")
-})
+router.get('/carrinho', CarrinholController.index) 
 
 module.exports = router;

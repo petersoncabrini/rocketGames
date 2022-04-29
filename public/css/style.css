@@ -18,6 +18,7 @@ body {
 
 header section{
   width: 100%;
+  height: 120px;
   background-color: #021e34;
   display: flex;
   align-items: center;
@@ -26,8 +27,8 @@ header section{
 }
 
 header section .logo{
-  height: 50px;
-  width: 50px;
+    width: 100%;
+    
 }
 
 header section .searchBar input {
@@ -45,7 +46,7 @@ header section .searchBar button {
   font-size: 15px;
   border: 1px solid #297C9F;
   border-radius: 5px;
-  background-color: #297C9F;
+  background-color: #00AFEF;
   color: white;
 }
 
@@ -56,7 +57,7 @@ header section .searchBar button:hover {
 header section .avatarProfile {
   height: 40px;
   width: 40px;
-  margin-right: -150px;
+  margin-right: -70px;
 }
 
 header section a {
@@ -73,6 +74,18 @@ header section .shoppingCar {
   height: 40px;
   width: 40px;
 }
+
+.iconcarrinho{
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  height: 4vh;
+  width: 100%;
+  background-color: #00AFEF;
+}
+
 nav ul {
   text-align: center;
   display: flex;
@@ -1279,19 +1292,20 @@ th {
 
 
 
-header section{
+/*header section{
   height: 10vh;
   width: 100%;
   background-color: #021e34;
   display: flex;
   align-items: center;
   justify-content:space-around;
-}
+} */
 
+/*
 header section .logo{
   height: 50px;
   width: 50px;
-}
+} */
 
 header section .searchBar input {
   text-align: center;
@@ -1307,13 +1321,14 @@ header section .searchBar input {
   color: #ffffff;
 }
 
+/*
 header section .searchBar button {
   width: 80px;
   font-size: 15px;
   border: 1px solid #297C9F;
   border-radius: 5px;
   background-color: #297C9F
-}
+} */
 
 header section .avatarProfile {
   height: 40px;
@@ -1329,11 +1344,7 @@ header section .shoppingCar {
   width: 40px;
 }
 
-nav {
-  height: 4vh;
-  width: 100%;
-  background-color: #297C9F;
-}
+
 
 nav ul {
   display: flex;

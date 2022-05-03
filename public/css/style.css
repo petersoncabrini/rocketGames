@@ -1498,27 +1498,31 @@ footer {
 
 footer ul {
   list-style-type: none;
+  margin-bottom: 0px;
 }
 
 footer .footerTitles {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 15px;
+  
 }
 
 footer .footerTitles h4 {
   font-size: 18px;
+  
 }
 
 footer section .footerTitles .linksContainer .links{
   font-size: 16px;
+  
 }
 
 footer section .footerTitles .linksContainer .links a{
   display: block;
   text-decoration: none;
   color: white;
-  margin-bottom: 10px;
+  
 }
 
 footer section .footerTitles .linksContainer .networkLinks{
@@ -1537,7 +1541,11 @@ footer .footerTitles h4 {
 
 footer .footerImg {
   width: 35px;
+  padding: 5%;
+ 
 }
+
+
 
 footer .paymentImg {
   width: 300px;
@@ -1605,4 +1613,4 @@ footer .paymentImg {
 
 }
 
-
+/* --- FIM PAGINA CARRINHO ---*/

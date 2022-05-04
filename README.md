@@ -1,5 +1,5 @@
 <h1 align="center"> <img src="https://github.com/petersoncabrini/rocketGames/blob/main/public/img/logo.png?raw=true"
-     alt="Logo Rocket Games" width="100px"> <br> rocketGames </h1>
+     alt="Logo Rocket Games" width="100px"> <br></h1>
 
 ![](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
 

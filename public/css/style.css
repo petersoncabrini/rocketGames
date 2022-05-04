@@ -76,12 +76,12 @@ header section .shoppingCar {
 }
 
 .iconcarrinho{
-  width: 40px;
+  width: 30px;
   height: 40px;
 }
 
 nav {
-  height: 4vh;
+  height: 5vh;
   width: 100%;
   background-color: #00AFEF;
 }
@@ -90,7 +90,8 @@ nav ul {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: auto;
   list-style-type: none;
 }
 
@@ -102,6 +103,11 @@ nav ul a{
 
 nav ul a:hover{
   color: #021E34;
+}
+
+.navegação{
+  padding-top: 4px;
+  margin-left: auto;
 }
 
 /* ---------- NAVBAR ---------- */
@@ -121,6 +127,8 @@ nav ul a:hover{
   padding: 0;
   background-color:#d3d3d3;
 }
+
+/*
 nav ul {
   text-align: center;
   display: flex;
@@ -128,6 +136,7 @@ nav ul {
   justify-content: space-around;
   list-style-type: none;
 }
+*/
 
 .slider img{
   display: block;
@@ -321,6 +330,7 @@ section.productPrice form.buy button {
   margin-bottom: 15px;
   font-size: 1.1rem;
 }
+
 
 section.productPrice form.buy button:hover{
   background-color: #297C9F;
@@ -1252,7 +1262,7 @@ svg {
 
 
 .tabela{
-  background-color: rgb(149, 208, 235);
+  background-color: #00AFEF;
   border-radius: 20px;
   border-collapse: collapse;
     -webkit-border-radius: 10px;
@@ -1285,7 +1295,7 @@ tr:nth-child(even){
 }
       
 th {
-  background-color: rgb(149, 208, 235);
+  background-color: #00AFEF;
   color: rgb(0, 0, 0);
         
 }
@@ -1345,6 +1355,7 @@ header section .shoppingCar {
 }
 
 
+/*
 
 nav ul {
   display: flex;
@@ -1361,6 +1372,7 @@ section.product {
   display: flex;
 }
 
+*/
 
 
 @media (max-width: 800px){

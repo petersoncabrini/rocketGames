@@ -1177,9 +1177,10 @@ header{
   text-decoration: none;
   margin: auto;
   margin-right: 8px;
-  border: solid 1px rgb(149, 208, 235);;
+  border: solid 1px rgb(149, 208, 235);
 
 }
+
 
 .bloco2{
   background-color: #f2f2f2;
@@ -1289,7 +1290,7 @@ svg {
 
 
 .tabela{
-  background-color: #00AFEF;
+  background-color: rgb(149, 208, 235);
   border-radius: 20px;
   border-collapse: collapse;
     -webkit-border-radius: 10px;
@@ -1297,17 +1298,21 @@ svg {
             border-radius: 10px;
             overflow: hidden;
   margin: auto;
-  width: 90%;
+  width: 88%;
   padding-bottom: 100px;
-  
+  box-shadow: 2px 2px 2px 2px rgb(157 160 161);
+  margin-bottom: 10px;  
+}
 
- 
-  
+.coluna1{
+  width: 800px;
 }
 
       
 .coluna2{
-  text-align: right;
+  text-align: center;
+  margin-left: 500px;
+  
 }
 
 th, td {
@@ -1322,7 +1327,7 @@ tr:nth-child(even){
 }
       
 th {
-  background-color: #00AFEF;
+  background-color: rgb(149, 208, 235);
   color: rgb(0, 0, 0);
         
 }

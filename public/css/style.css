@@ -1668,20 +1668,20 @@ footer .paymentImg {
 
 /* --- INICIO PAGINA PAINEL ---*/
 
-.perfil{
-  margin-right: 83%;
-  margin-left: 1%;
-  border-radius: 30%;
-  display: inline-block;
+.usuario{
+  width:auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  
 }
 
-.card{
-  text-align: center;
+.campousuario{
+  margin-left:5%;
+  margin-bottom: 100vh;
 }
 
-.dados{
-  background-color: #05ac50;
-}
+
+
 
 
 /* --- FIM PAGINA PAINEL ---*/

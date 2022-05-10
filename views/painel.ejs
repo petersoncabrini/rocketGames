@@ -283,24 +283,28 @@
 
 <%- include('./partials/header') %>
 
-<section class="perfil">
+<section class="perfil d-inline-flex flex-column">
 
-  <div class="card";>
-    <img class="card-img-top p-2" src="../img/avatarProfile.png" alt="Imagem de capa do card">
+  <div class="card d-inline-flex flex-column">
+    <img class="card-img-top p-4" src="../img/avatarProfile.png" alt="Imagem de capa do card">
     <div class="card-body">
       <h5 class="card-title">Nome do Usuário</h5>
-  </div>
+  </div> 
 
   <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action active">
-      Cras justo odio
+      Minha Conta
     </a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-    <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-  </div> 
+    <a href="#" class="list-group-item list-group-item-action">Alterar Senha</a>
+    <a href="#" class="list-group-item list-group-item-action">Meus Pedidos</a>
+    <a href="#" class="list-group-item list-group-item-action">Lista de Desejos</a>
+  </div>
+
+  <div class="dados ">
+    <h2>Confirme seus dados</h2>
+  </div>
 
   </section>
+
 
 <%- include('./partials/footer') %>

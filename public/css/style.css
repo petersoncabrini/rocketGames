@@ -1669,17 +1669,19 @@ footer .paymentImg {
 /* --- INICIO PAGINA PAINEL ---*/
 
 .perfil{
-  background-color: #00ef28;
-  display: flex;
   margin-right: 83%;
   margin-left: 1%;
-  flex-direction: column;
+  border-radius: 30%;
+  display: inline-block;
 }
 
 .card{
   text-align: center;
 }
 
+.dados{
+  background-color: #05ac50;
+}
 
 
 /* --- FIM PAGINA PAINEL ---*/

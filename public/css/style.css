@@ -1724,7 +1724,7 @@ footer .paymentImg {
 
 /* --- INICIO PAGINA PAINEL ---*/
 
-<<<<<<< HEAD
+
 .perfil {
   margin-bottom: 00vh;
 
@@ -1773,7 +1773,10 @@ footer .paymentImg {
   margin-bottom: 3%;
 
 }
-=======
+
+/* --- FIM PAGINA PAINEL ---*/
+
+
 .usuario{
   width:auto;
   margin-right: auto;
@@ -1785,10 +1788,3 @@ footer .paymentImg {
   margin-left:5%;
   margin-bottom: 100vh;
 }
-
-
-
->>>>>>> 49df41cbc4b1f92327ee209892fd48b7a6775576
-
-
-/* --- FIM PAGINA PAINEL ---*/

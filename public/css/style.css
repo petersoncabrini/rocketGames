@@ -219,69 +219,29 @@ border: none;
 padding: 10px;
 cursor: pointer;
 }
-/* ---------- PRODUCT  ---------- */
 
-section.product {
-  margin-top: -100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* ---------- PAGINA PRODUTO  ---------- */
 
-div.productContainer {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
-}
-
-section.product img.cover {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 40px;
-  width: 265px;
-  height: 350px;
-}
-
-.productContainer .imageBar {
+#imageBar{
   list-style-type: none;
 }
 
-.productContainer .sampleImages {
-  background-image: url(https://www.gamingdragons.com/images/game_img/eldenringxbl.jpg);
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position: center;
-  width: 70px;
-  height: 70px;
-  margin: 10px;
-}
-
-.productContainer .sampleImages:hover {
+main div.container div.row div.col-2 #imageBar li a img:hover{
+  border: 3px solid #021e34;
   border-radius: 10px;
-  border: 2px solid black;
 }
 
-div.about h2 {
-  margin-left: 20px;
+.imgProduct {
+  width: 380px;
+  height: 500px;
 }
 
-div.about p {
-  margin: 20px;
+.productDescription {
   text-align: justify;
 }
 
-div.about ul.share {
+.share{
   list-style-type: none;
-  display: flex;
-  align-items:center;
-  text-align: center;
-  justify-content: center;
-}
-
-div.about ul li {
-  margin-inline: 10px;
 }
 
 div .share img {
@@ -289,12 +249,7 @@ div .share img {
   height: 30px;
 }
 
-div .share img:hover{
-  border: 3px solid #021e34;
-  border-radius: 5px;
-}
-
-/* ---------- PRICE AND PAYMENT METhODS ---------- */
+/* ---------- CARD PREÇO E FORMAS DE PAGAMENTO ---------- */
 
 section.productPrice {
   background-color: white;
@@ -320,8 +275,10 @@ section.productPrice img {
   margin-bottom: 30px;
 }
 
-form.frete{
-  margin-bottom: 30px;
+form.frete p.valorFrete {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 form.frete input {
@@ -366,10 +323,8 @@ section.productPrice form.buy button:hover{
 
 /* ---------- SIMILAR PRODUCTS ---------- */
 
-section.similarProducts {
-  padding: 30px;
-  border-radius: 10px;
-  background-color: white;
+.similarProducts {
+  margin-top: 350px;
 }
 
 section.similarProducts ul {
@@ -378,14 +333,10 @@ section.similarProducts ul {
   justify-content: space-around;
 }
 
-section.similarProducts h1{
-  margin-bottom: 20px;
-}
-
 section.similarProducts ul a li img{
   width: 125px;
   height: 125px;
-  padding: 10px;
+  padding: 15px;
 }
 
 section.similarProducts ul a li img:hover{
@@ -396,35 +347,16 @@ section.similarProducts ul a li img:hover{
 /* ---------- PRODUCT DESCRIPTION / INFORMATION ---------- */
 
 section.productDescription {
-  padding: 30px;
   border-radius: 10px;
   background-color: white;
   align-items: center;
   text-align: justify;
 }
 
-section.productDescription h1 {
-  margin-bottom: 10px;
-}
-
-section.productInformation {
-  padding: 30px;
-  border-radius: 10px;
-  background-color: white;
-  margin-bottom: 10px;
-}
-
-section.productInformation h1 {
-  margin-bottom: 10px;
-}
-
 section.productInformation ul {
   list-style-type: none;
 }
 
-section.productInformation ul li {
-  margin-bottom: 10px;
-}
 
 
 /* .footerUl{

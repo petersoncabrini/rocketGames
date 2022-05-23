@@ -1,310 +1,153 @@
-<!---
-  
-  <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket Games - Painel</title>
-    <link rel="stylesheet" href="/public/css/painel.css">
-</head>
-<header>
-    <img id="logo" src="/public/img/logo.png" alt="logo rocket games">
-    <form id="searchBar">
-        <input type="search" id="query" name="q" placeholder="O que voce procura?">
-        <button>Search</button>
-    </form>
-    <a href="#">
-        <img id="avatarProfile" src="/public/img/avatarProfile.png" alt="Profile">
-    </a>
-    <a href="#">
-        <p>Faça login ou cadastre-se</p>
-    </a>
-    <a href="#"><img id="shoppingCar" src="/public/img/shoppingCar.png" alt=""></a>
-</header>
+<%- include('./partials/header') %>
 
 
+  <section class="pefil">
 
-
-<section class="csspainel">
-<body>
-   
-    <nav id="menu-h">
-
-    <ul>
-        <li><a href="#">Pagina Inicial</a></li>
-        <li><a href="#">Minha conta</a></li>
-       
-    </ul>
-</nav> 
-
-</body>
-<main>
-    <section class="dados-cliente">
-      <div class="bloco1">
-        <div class="titulo1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
-            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-          </svg></div>
-
-        
-        <label for="text" class="form-label">Nome do Usuario</label>
-        <br>
-        <br>
-        <form class="row g-3">
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Minha conta</label>
-            </div>
-            <br>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Alterar Senha</label>
-           
+    <div class="avatar d-inline-flex" style="height:auto">
+      <div class="avatartext">
+        <div class="card border-0" style="width: 12rem;">
+          <img class="card-img-top p-2" src="../img/avatarProfile.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Nome do usuário</h5>
           </div>
-          <br>
-          <div class="col-md-6">
-            <label for="text" class="form-label">Meus Pedidos</label>
-            <br>
-            <br>
-            <div class="col-md-6">
-            <label for="text" class="form-label">Lista de Desejos</label>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active"
+              style='border: solid 1px #00AFEF; background-color: #00AFEF;'>
+              Minha Conta
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Alterar Senha</a>
+            <a href="#" class="list-group-item list-group-item-action">Meus Pedidos</a>
+            <a href="#" class="list-group-item list-group-item-action">Lista de Desejos</a>
+          </div>
+
         </div>
-          </div>
-          <br>
-          <br>
-          </form>    
-        
-        
-        
       </div>
 
 
-      
-      <div class="bloco2">
-        <div class="titulo2">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg>
-          <span class="descricao2"><h5>Minha Conta:
-              confirme ou edite seus dados Cadastrais.
-          </h5><br></span>
-          
-        </div><br> 
-
-           <form class="row g-3">      
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Nome completo</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu nome">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">CPF</label>
-              <input type="text" class="form-control" id="inputEmail4">
+      <div class="campodado border p-4 align-self-start">
+        <div class="titletext card-body p-0 w-50">
+          <h5 class="card-title">Minha Conta</h5>
+          <h5 class="small" style="width: 300px;">Confirme ou edite seus dados cadastrais:</h5>
+        </div>
+        <form>
+          <div class="titletextt form-row d-inline-flex ">
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault01">Primeiro nome</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="" required>
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Data de nascimento</label>
-              <input type="text" class="form-control" id="inputPassword4">
-            </div>          
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Celular</label>
-              <input type="text" class="form-control" id="inputEmail4">
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault02 ">Sobrenome</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value=""
+                required>
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Telefone Fixo</label>
-              <input type="text" class="form-control" id="inputPassword4">
-            </div>
-        <form class="row g-3">
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="inputAddress" placeholder="Digite seu e-mail">
-            </div>
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Criar senha</label>
-              <input type="password" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Confirmar senha</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            </form><br>
-  
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="pessoa" id="inlineCheckbox1" value="option1"checked >
-              <label class="form-check-label" for="inlineCheckbox1">Pessoa Física</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="pessoa" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Pessoa Jurídica</label>
-             </div><br><br>
-  
-             
-            </div><br>
-  
-            
-            </form>    
-      
-        
-         
-        
-        
-
-
-
-
-
-
-
-      </div>
-      <div class="bloco3">
-        <div class="titulo3">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-          </svg>
-          <span class="descricao3"><h5>Bloco 3:</h5><br></span>
-          
-        </div><br>
-      
-       
-              </form>
-            </div>
-          </div>
-
-          
-
-          </form><br>
-
-
-     
-          </form>
-
-          </div>
-    </section>
-
-
-
-  </main>
-
-</section>
-
-
-
-
-
-  <footer>
-    <div class="footer-wrapper">
-        <ul class="footerUl">
-            <li class="footerList">
-                <div class="footerDiv">
-                    <img id="contactLogo" src="/public/img/contact.png" alt="logo contact">
-                    <p>
-                        Fale Conosco
-                    </p>
-                    
-                   
+            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+              <label for="validationDefaultUsername">Usuário</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
                 </div>
-            </li>
-            <li>
-                <p> <a href="" target="_blank">
-                        link 1
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p> <a href="" target="_blank">
-                        link2
-                    </a>
-                </p>
-            </li>
-        </ul>
-        <ul class="footerUl">
-            <li>
-                <p>
-                    Nossas Redes
-                </p>
-            </li>
-            <li class="socialIcon">
-                 <a href="#"><img id="fbLogo" src="/public/img/facebook.png" alt="logo facebook">
-                    </a>
-                
-            </li>
-            <li class="socialIcon">
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário"
+                  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
 
-                <a href="#"><img id="instaLogo" src="/public/img/instagram.png" alt="logo instagram">
-                </a>
-            </li>
-        </ul>
-        <ul class="footerUl">
-
-            <li>
-                <p>
-                    Termos e Condições
-                </p>
-            </li>
-            <li>
-                <a href="#">
-                    link1
-                </a>
-            </li>
-        </ul>
-
-        <ul class="footerUl">
-            <li>
-                <p>
-                    Formas de Pagamento
-                </p>
-                <img id="payLogo" src="/public/img/paymentMethods.png" alt="logo payments">
-            </li>
-
-        </ul>
+          </div>
+          <div class="titletextt form-row d-inline-flex">
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault03">E-mail</label>
+              <input type="email" class="form-control" id="validationDefault03" placeholder="E-mail" required>
+            </div>
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault04">CPF</label>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="CPF" required>
+            </div>
 
 
+          </div>
+
+          <div class="titletext card-body p-0" style="margin-top:10px">
+            <h5 class="card-title">Endreço Principal</h5>
+            <h5 class="small" style="width: 300px;">Confirme ou edite seu endereço:</h5>
+          </div>
+
+          <div class="titletextt form-row d-inline-flex">
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault03">Cidade</label>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+            </div>
+            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault04">Estado</label>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
+            </div>
+            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault05">CEP</label>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" required>
+            </div>
+          </div>
+          <div class="titletextt form-row d-inline-flex">
+            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault03">Bairro</label>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Bairro" required>
+            </div>
+            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault04">País</label>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="País" required>
+            </div>
+          </div>
 
 
+          <div class="form-group">
+            <div class="titletextt form-check" style="margin-left: 65%;">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Concordo com os termos e condições
+              </label>
+            </div>
+          </div>
+          <button class="titletextt btn btn-primary p-2"
+            style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 70%;'
+            type="submit">editar dados
+            cadastrais</button>
+        </form>
 
+      </div>
+    </div>
+
+
+    <div class="campodados border p-4 align-self-start">
+      <div class="titletext card-body p-0 w-50">
+        <h5 class="card-title">Meus Pedidos</h5>
+        <h5 class="small" style="width: 300px;">Confirme ou edite seus pedidos:</h5>
+      </div><br>
+      <div class="pedidos" style="text-align: center;">
+        <h5>Você ainda não efetuou nenhum pedido!
+        </h5><br>
+      </div>
+      <form>
+        <button class="titletextt btn btn-primary p-2 w-25"
+          style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 73%;'
+          type="submit">ver todos produtos</button>
+      </form>
 
     </div>
 
-</footer>
+    <div class="campodesejos border p-4 align-self-start">
+      <div class="titletext card-body p-0 w-50">
+        <h5 class="card-title">Lista de Desejos</h5>
+      </div><br>
+      <div class="pedidos" style="text-align: center;">
+        <h5>Não existem produtos adicionados.
+        </h5>
+        <h5 class="small">Para adicionar produtos à lista de desejos, você deve entrar na página de produtos e clicar em "Lista de Desejos"</h5>
+        <br>
+      </div>
+      <form>
+        <button class="titletextt btn btn-primary p-2 w-25"
+          style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 73%;'
+          type="submit">ver todos produtos</button>
+      </form>
 
-
-
-
-
-</html>
-
--->
-
-
-<!--- FIM "CÓDIGO" JACSON-->
-
-
-<%- include('./partials/header') %>
-
-<section class="perfil d-inline-flex flex-column">
-
-  <div class="card d-inline-flex flex-column">
-    <img class="card-img-top p-4" src="../img/avatarProfile.png" alt="Imagem de capa do card">
-    <div class="card-body">
-      <h5 class="card-title">Nome do Usuário</h5>
-  </div> 
-
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active">
-      Minha Conta
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">Alterar Senha</a>
-    <a href="#" class="list-group-item list-group-item-action">Meus Pedidos</a>
-    <a href="#" class="list-group-item list-group-item-action">Lista de Desejos</a>
-  </div>
-
-  <div class="dados ">
-    <h2>Confirme seus dados</h2>
-  </div>
-
+    </div>
   </section>
 
-
-<%- include('./partials/footer') %>
+  <%- include('./partials/footer') %>

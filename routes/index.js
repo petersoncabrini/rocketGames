@@ -10,6 +10,7 @@ const LoginController = require ('../controllers/LoginController')
 const Painelontroller = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
 const ProductListController = require ('../controllers/ProductListController')
+const {body} = require('express-validator')
 
 let validadeLogin = [
     check('name')
@@ -25,6 +26,10 @@ let validadeLogin = [
 ]
 
 
+const validacoes =[
+    body('nome').notEmpty().withMessage('O nome não pode ser vazio')
+];
+
 router.get('/home', HomeController.home) 
 
 router.get('/product', ProductController.product) 
@@ -39,7 +44,7 @@ router.post('/login/entrar', validadeLogin, LoginController.entrarConta)
 
 router.get('/productlist', ProductListController.productList) 
 
-router.get('/painel', Painelontroller.painel) 
+router.get('/painel', validacoes, Painelontroller.painel) 
 
 router.get('/carrinho', CarrinhoController.carrinho) 
 

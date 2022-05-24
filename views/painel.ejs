@@ -29,16 +29,28 @@
           <h5 class="card-title">Minha Conta</h5>
           <h5 class="small" style="width: 300px;">Confirme ou edite seus dados cadastrais:</h5>
         </div>
-        <form>
+        <div>
+
+          <% if(typeof errors !== 'undefined'){%>           
+          <ul>
+            <% for(let error in errors) {%>
+              <li>
+                <b><%= error  %>: </b>
+                <%= errors[error].msg %>
+              </li>
+              <% } %> 
+          </ul>
+        <% } %> 
+        <form method="get" enctype="multipart/form-data">
           <div class="titletextt form-row d-inline-flex ">
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault01">Primeiro nome</label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="" required>
+              <input type="text" class="form-control" id="validationDefault01"  placeholder="Nome" value="" name="nome">
             </div>
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault02 ">Sobrenome</label>
-              <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value=""
-                required>
+              <input type="text" class="form-control" id="validationDefault02"  placeholder="Sobrenome" value=""
+                >
             </div>
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefaultUsername">Usuário</label>
@@ -46,8 +58,8 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroupPrepend2">@</span>
                 </div>
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário"
-                  aria-describedby="inputGroupPrepend2" required>
+                <input type="text" class="form-control" id="validationDefaultUsername"  placeholder="Usuário"
+                  aria-describedby="inputGroupPrepend2" >
               </div>
             </div>
 
@@ -55,11 +67,11 @@
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault03">E-mail</label>
-              <input type="email" class="form-control" id="validationDefault03" placeholder="E-mail" required>
+              <input type="email" class="form-control"  id="validationDefault03" placeholder="E-mail">
             </div>
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault04">CPF</label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="CPF" required>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="CPF" >
             </div>
 
 
@@ -73,43 +85,44 @@
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault03">Cidade</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" >
             </div>
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefault04">Estado</label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" >
             </div>
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefault05">CEP</label>
-              <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" required>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" >
             </div>
           </div>
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault03">Bairro</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Bairro" required>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Bairro" >
             </div>
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefault04">País</label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="País" required>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="País" >
             </div>
           </div>
 
 
           <div class="form-group">
             <div class="titletextt form-check" style="margin-left: 65%;">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" >
               <label class="form-check-label" for="invalidCheck2">
                 Concordo com os termos e condições
               </label>
             </div>
           </div>
+          <a href="./productlist">
           <button class="titletextt btn btn-primary p-2"
             style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 70%;'
-            type="submit">editar dados
-            cadastrais</button>
+            >editar dados
+            cadastrais</button></a>
         </form>
-
+      </div>
       </div>
     </div>
 

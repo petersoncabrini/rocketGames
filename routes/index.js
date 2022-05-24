@@ -61,8 +61,7 @@ let validarEditarPainel =[
     .notEmpty().withMessage('O campo Estado deve ser preenchido').bail(),
     check('CEP')
     .notEmpty().withMessage('O campo CEP deve ser preenchido').bail()
-    .isLength({min:8, max:8}).withMessage('CEP Invalido'),
-
+    .isLength({min:8, max:8}).withMessage('CEP Invalido')
 ]
 
 router.get('/home', HomeController.home) 

@@ -45,8 +45,16 @@ let validarEditarPainel =[
     .notEmpty().withMessage('O campo Email deve ser preenchido').bail()
     .isEmail().withMessage('Digite um email valido'),
     check('CPF')
+    .notEmpty().withMessage('O campo CPF deve ser preenchido').bail()
     .isInt().withMessage('O campo CPF aceita somente numeros').bail()
     .isLength({min:11, max:11}).withMessage('CPF Invalido'),
+    check('Endereco')
+    .notEmpty().withMessage('O campo Endereco deve ser preenchido').bail(),
+    check('Numero')
+    .notEmpty().withMessage('O campo Numero deve ser preenchido').bail()
+    .isInt().withMessage('O campo Numero aceita somente numeros').bail(),
+    check('Bairro')
+    .notEmpty().withMessage('O campo Bairro deve ser preenchido').bail(),
     check('Cidade')
     .notEmpty().withMessage('O campo Cidade deve ser preenchido').bail(),
     check('Estado')
@@ -54,10 +62,7 @@ let validarEditarPainel =[
     check('CEP')
     .notEmpty().withMessage('O campo CEP deve ser preenchido').bail()
     .isLength({min:8, max:8}).withMessage('CEP Invalido'),
-    check('Bairro')
-    .notEmpty().withMessage('O campo Bairro deve ser preenchido').bail(),
-    check('Pais')
-    .notEmpty().withMessage('O campo Pais deve ser preenchido').bail()
+
 ]
 
 router.get('/home', HomeController.home) 

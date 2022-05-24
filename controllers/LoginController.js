@@ -9,7 +9,7 @@ const LoginController = {
         if (errors.isEmpty()) {
             res.redirect('/home')
         } else {
-            return res.render('login', { errors: errors.mapped(), old: req.body })
+            res.render('login', { errors: errors.mapped(), old: req.body })
         }
         console.log(req.body)
     },
@@ -18,7 +18,7 @@ const LoginController = {
         if (errors.isEmpty()) {
             res.redirect('/home')
         } else {
-            return res.render('login', { errors: errors.mapped(), old: req.body })
+            res.render('login', { errors: errors.mapped(), old: req.body })
         }
         console.log(req.body)
     }

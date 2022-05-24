@@ -12,10 +12,20 @@ const CarrinhoController = require ('../controllers/CarrinhoController')
 const ProductListController = require ('../controllers/ProductListController')
 const {body} = require('express-validator')
 
-let validadeLogin = [
+let validadeCriarConta = [
     check('name')
     .notEmpty().withMessage('O campo deve ser preenchido').bail()
     .isLength({min:5}).withMessage('O nome deve ter pelo menos 5 caracteres'),
+    check('email')
+    .notEmpty().withMessage('O campo deve ser preenchido').bail()
+    .isEmail().withMessage('Digite um email valido'),
+    check('password')
+    .notEmpty().withMessage('O campo deve ser preenchido').bail()
+    .isLength({min:6}).withMessage('A senha deve ter pelo menos 6 caracteres'),
+
+]
+
+let validadeEntrarConta = [
     check('email')
     .notEmpty().withMessage('O campo deve ser preenchido').bail()
     .isEmail().withMessage('Digite um email valido'),
@@ -39,8 +49,8 @@ router.get('/finalizarcompra', FinalizarCompraController.finalizarCompra)
 router.get('/sucesso', SucessoController.sucesso) 
 
 router.get('/login', LoginController.login) 
-router.post('/login/criar', validadeLogin, LoginController.criarConta)
-router.post('/login/entrar', validadeLogin, LoginController.entrarConta)
+router.post('/login/criar', validadeCriarConta, LoginController.criarConta)
+router.post('/login/entrar', validadeEntrarConta, LoginController.entrarConta)
 
 router.get('/productlist', ProductListController.productList) 
 

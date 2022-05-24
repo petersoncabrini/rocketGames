@@ -28,9 +28,9 @@
                     <button id="signin" class="btn btn-primary"
                         style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Entrar</button>
                 </div>
-                <div class="second-column">
+                <div class="second-column" >
                         <% if(typeof errors !== 'undefined'){%>           
-                            <ul>
+                            <ul class="errocriar" >
                               <% for(let error in errors) {%>
                                 <li>
                                   <b><%= error  %>: </b>
@@ -67,7 +67,7 @@
                 <div class="second-column">
 
                     <% if(typeof errors !== 'undefined'){%>           
-                        <ul>
+                        <ul class="erroentrar" >
                           <% for(let error in errors) {%>
                             <li>
                               <b><%= error  %>: </b>
@@ -88,7 +88,7 @@
 
                                 <a class="password" href="#">Esqueceu sua senha?</a>
                                 <a href="http://localhost:3000/login/entrar"><button
-                                        class="btn btn-second">Entrar</button></a>
+                                        class="btn btn-second" style="border: solid 2px rgb(149, 208, 235)">Entrar</button></a>
                             </form>
                 </div><!-- second column -->
             </div><!-- second-content -->

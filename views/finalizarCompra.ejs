@@ -44,9 +44,6 @@
         </ul>
         <% } %>
     </div>
-
-
-    
     <!-- <div class="bloco1">
       <div class="titulo1">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-card-list"
@@ -108,9 +105,6 @@
         </div>
       </form>
     </div> -->
-
-    
-    
     <div class="bloco2">
       <div class="titulo2">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt"
@@ -168,12 +162,8 @@
           <input class="form-check-input" type="radio" name="tipo" id="inlineCheckbox1" value="midiaFisica">
           <label class="form-check-label" for="inlineCheckbox1">Envio em mídia física.</label>
         </div>
-        </form>
-    
-    
-      </div>
-
-
+      </form>
+    </div>
     <div class="bloco3">
       <div class="titulo3">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-credit-card"
@@ -186,7 +176,7 @@
           <h5>PAGAMENTO:</h5>
         </span>
       </div>
-      <form class="row g-3" >
+      <form class="row g-3" method="POST" action="/finalizarCompra/comprar">
         <div class="p-2 d-inline-flex" style="width: 840px; margin-top: 20px; height: 45px;">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pagamento" id="inlineCheckbox1" value="Cartao" checked>
@@ -201,7 +191,6 @@
             <label class="boleto" for="inlineCheckbox1"><img src="/img/boleto.png" alt=""></label>
           </div><br>
         </div>
-
         <div class="col-md-4">
           <label for="inputAddress" class="form-label">Número do cartão</label>
           <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputAddress"
@@ -212,7 +201,6 @@
           <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
             placeholder="mm/aa" name="Validade" value="<%= locals.old && old.Validade %>">
         </div>
-
         <div class="col-4">
           <label for="inputEmail4" class="form-label">Nome no Cartão</label>
           <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputEmail4"
@@ -225,8 +213,8 @@
         </div>
         <div class="col-md-3 d-inline-flex" style="margin-top: 35px;">
           <div class="form-floating">
-            <select class="form-select" style='border: solid 1px rgb(149, 208, 235); width: 250px; margin-right: 300px;' id="floatingSelectGrid"
-              aria-label="Floating label select example" name="QuantidadeParcelas"
+            <select class="form-select" style='border: solid 1px rgb(149, 208, 235); width: 250px; margin-right: 300px;'
+              id="floatingSelectGrid" aria-label="Floating label select example" name="QuantidadeParcelas"
               value="<%= locals.old && old.QuantidadeParcelas %>">
               <option selected>Quantidade de parcelas</option>
               <option value="1">1x</option>
@@ -244,8 +232,6 @@
             </select>
             <label for="floatingSelectGrid">* Com Juros</label>
           </div>
-
-                    
           <div class="col-15" style="margin-bottom: 20px;">
             <div class="botaofinalizar">
               <a href="http://localhost:3000/finalizarCompra/comprar"><button type="submit"
@@ -253,18 +239,10 @@
                   <b>Finalizar Compra</b>
                 </button></a>
             </div>
-
           </div>
-          </div>
-          
-
-
         </div>
-      </form>
     </div>
-
+    </form>
+    </div>
   </section>
-
-
-
   <%- include('./partials/footer') %>

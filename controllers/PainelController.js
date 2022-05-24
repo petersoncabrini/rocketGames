@@ -1,15 +1,19 @@
 const { validationResult } = require('express-validator');
 
 const PainelController = {
-    painel: function(req, res, next){
-        const errors = validationResult(req);
-        if (!errors.isEmpty()){
-            console.log(errors.mapped());
-            return res.render('painel', {errors: errors.mapped()});
+    painel: function (req, res) {
+        res.render('painel');
+    },
+    editarPainel: (req, res) => {
+        let errors = validationResult(req)
+        if (errors.isEmpty()) {
+            console.log(req.body)
+            res.redirect('/home')
+        } else {
+            res.render('painel', { errors: errors.mapped(), old: req.body })
         }
-        return res.send('deu certo');
-        /-res.render('painel'); -/
+        console.log(req.body)
     }
 }
 
-module.exports = PainelController;
+module.exports = PainelController

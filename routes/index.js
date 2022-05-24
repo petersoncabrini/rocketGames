@@ -35,6 +35,7 @@ router.get('/sucesso', SucessoController.sucesso)
 
 router.get('/login', LoginController.login) 
 router.post('/login/criar', validadeLogin, LoginController.criarConta)
+router.post('/login/entrar', validadeLogin, LoginController.entrarConta)
 
 router.get('/productlist', ProductListController.productList) 
 

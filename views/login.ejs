@@ -66,41 +66,24 @@
                         style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Criar Conta</button>
                 </div>
                 <div class="second-column">
-                    <h2 class="title title-second">ROCKETGAMES</h2>
-                    <div class="social-media">
-                        <ul class="list-social-media">
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-facebook-f"></i>
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </li>
-                            </a>
-                        </ul>
-                    </div><!-- social media -->
-                    <p class="description description-second">ou use sua conta de e-mail:</p>
-                    <form class="form">
+                    <h2 class="title title-second mb-3">ROCKETGAMES</h2>
+                    <form class="form" method="POST" action="/login/entrar">
+                            <input class="mb-3" type="email" name="email" placeholder="Email" value="<%= locals.old && old.email %>">
+                            <% if (locals.errors && errors.name) { %>
+                                <p class="feedback">
+                                    <%= errors.name %>
+                                </p>
+                                <% } %>
 
-                        <label class="label-input" for="">
-                            <i class="far fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="Email">
-                        </label>
-
-                        <label class="label-input" for="">
-                            <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha">
-                        </label>
+                            <input class="mb-3" type="password" name="password" placeholder="Senha" value="<%= locals.old && old.password %>">
+                            <% if (locals.errors && errors.name) { %>
+                                <p class="feedback">
+                                    <%= errors.name %>
+                                </p>
+                                <% } %>
 
                         <a class="password" href="#">Esqueceu sua senha?</a>
-                        <button class="btn btn-second">Entrar</button>
+                        <a href="http://localhost:3000/login/entrar"><button class="btn btn-second">Entrar</button></a>  
                     </form>
                 </div><!-- second column -->
             </div><!-- second-content -->

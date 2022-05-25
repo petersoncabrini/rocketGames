@@ -1,4 +1,5 @@
-const { validationResult } = require('express-validator')
+const { validationResult } = require('express-validator');
+const req = require('express/lib/request');
 
 const LoginController = {
     login: function (req, res) {
@@ -14,14 +15,19 @@ const LoginController = {
         console.log(req.body)
     },
     entrarConta: (req, res) => {
-        let errors = validationResult(req)
+       let errors = validationResult(req);
         if (errors.isEmpty()) {
-            res.redirect('/home')
+            req.session.emailUsuario = 'brucebat@gmail.com';
+            req.session.nomeUsuario = 'Bruce Wayne';
+            req.session.idUsuario = '1';
+            res.redirect('/productlist');
         } else {
             res.render('login', { errors: errors.mapped(), old: req.body })
         }
         console.log(req.body)
-    }
+    },
 }
+
+
 
 module.exports = LoginController;

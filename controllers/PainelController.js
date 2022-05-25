@@ -3,6 +3,7 @@ const { validationResult } = require('express-validator');
 const PainelController = {
     painel: function (req, res) {
         res.render('painel');
+        nomeUsuaro= 'vrau';
     },
     editarPainel: (req, res) => {
         let errors = validationResult(req)
@@ -13,7 +14,7 @@ const PainelController = {
             res.render('painel', { errors: errors.mapped(), old: req.body })
         }
         console.log(req.body)
-    }
+    },
 }
 
 module.exports = PainelController

@@ -10,7 +10,9 @@ const SucessoController = require ('../controllers/SucessoController')
 const LoginController = require ('../controllers/LoginController')
 const PainelController = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
-const ProductListController = require ('../controllers/ProductListController');
+const ProductListController = require ('../controllers/ProductListController')
+const PainelLogadoController = require('../controllers/PainelLogadoController')
+const LogoutController = require('../controllers/LogoutController')
 
 
 // Express-validator
@@ -129,6 +131,9 @@ router.get('/productlist', ProductListController.productList)
 
 router.get('/painel', PainelController.painel) 
 router.post ('/painel/editar', validarEditarPainel, PainelController.editarPainel)
+
+router.get('/painelLogado', PainelLogadoController.logado) 
+router.get('/logout', LogoutController.logout)
 
 router.get('/carrinho', CarrinhoController.carrinho) 
 

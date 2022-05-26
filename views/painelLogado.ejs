@@ -1,0 +1,80 @@
+<%- include('./partials/header') %>
+
+
+  <section class="pefil">
+    
+    <div class="d-inline-flex">
+      <h2 class="nomeuser">
+        Bem Vindo, <%= nomeUsuario %>! 
+      </h2>
+      <a class='botaosair' href="/logout">SAIR        
+      </a>
+    </div>
+    
+    
+
+
+    <div class="avatar d-flex" style="height:auto">
+      <div class="avatartext">
+        <div class="card border-0" style="width: 12rem;">
+          <img class="card-img-top p-2" src="../img/avatarProfile.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title"><%= nomeUsuario %></h5>
+          </div>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active"
+              style='border: solid 1px #00AFEF; background-color: #00AFEF;'>
+              Minha Conta
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Alterar Senha</a>
+            <a href="#" class="list-group-item list-group-item-action">Meus Pedidos</a>
+            <a href="#" class="list-group-item list-group-item-action">Lista de Desejos</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex-column" style="margin-right: 85%;">
+
+      <div class="campodado border p-4 align-self-start">
+        <div class="titletext card-body p-0 w-50">
+          <h5 class="card-title">Meus Pedidos</h5>
+          <h5 class="small" style="width: 300px;">Confirme ou edite seus pedidos:</h5>
+        </div><br>
+        <div class="pedidos" style="text-align: center;">
+          <h5>Você ainda não efetuou nenhum pedido!
+          </h5><br>
+        </div>
+        <form>
+          <button class="titletextt btn btn-primary p-2 w-25"
+            style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 73%;'
+            type="submit">ver todos produtos</button>
+        </form>
+      </div>
+      
+      <div class="campodado border p-4 align-self-start" style="margin-bottom: 7%;">
+        <div class="titletext card-body p-0 w-50">
+          <h5 class="card-title">Lista de Desejos</h5>
+        </div><br>
+        <div class="pedidos" style="text-align: center;">
+          <h5>Não existem produtos adicionados.
+          </h5>
+          <h5 class="small">Para adicionar produtos à lista de desejos, você deve entrar na página de produtos e clicar em "Lista de Desejos"</h5>
+          <br>
+        </div>
+        <form>
+          <button class="titletextt btn btn-primary p-2 w-25"
+            style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 73%;'
+            type="submit">ver todos produtos</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+    
+
+
+
+  </section>
+
+  <%- include('./partials/footer') %>

@@ -1667,6 +1667,7 @@ footer .paymentImg {
 .avatar {
   margin-bottom: auto;
   margin-left: 1%;
+  margin-top: 2%;
 }
 
 .avatartext {
@@ -1676,10 +1677,10 @@ footer .paymentImg {
 }
 
 .campodado {
-  width: 1000px;
   margin-top: 1%;
   box-shadow: 1px 1px 10px 1px rgb(157 160 161);
   border-radius: 1%;
+  width: 58em;
 
 }
 
@@ -1706,6 +1707,20 @@ footer .paymentImg {
 .titletext {
   margin-bottom: 3%;
 
+}
+
+.nomeuser{
+  margin-left: 2%;
+  width: 1150px;
+}
+
+.botaosair{
+  color: rgb(0, 0, 0);
+  padding-top: 1%;
+}
+
+.grid{
+  border-radius: 10%;
 }
 
 /* --- FIM PAGINA PAINEL ---*/

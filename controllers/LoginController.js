@@ -20,7 +20,7 @@ const LoginController = {
             req.session.emailUsuario = 'brucebat@gmail.com';
             req.session.nomeUsuario = 'Bruce Wayne';
             req.session.idUsuario = '1';
-            res.redirect('/productlist');
+            res.redirect('/painelLogado');
         } else {
             res.render('login', { errors: errors.mapped(), old: req.body })
         }

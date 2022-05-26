@@ -410,15 +410,15 @@ li a{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
-  margin-bottom: 60px;
+  margin-bottom: 17%;
+  margin-top: 13%;
 }
 
 .content {
   background-color: #fff;
   border-radius: 15px;
   width: 960px;
-  height: 52%;
+  height: 35%;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -682,6 +682,10 @@ li a{
   /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
+.erroentrar{
+  margin-left: 12%;
+  margin-bottom: -5%;
+}
 
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -832,6 +836,8 @@ li a{
   .form {
     width: 90%;
   }
+
+
 
   /* ANIMAÇÃO MOBILE CSS*/
 

@@ -119,7 +119,7 @@ router.get('/home', HomeController.home)
 router.get('/product', ProductController.product) 
 
 router.get('/finalizarcompra', FinalizarCompraController.finalizarCompra) 
-router.post ('/finalizarCompra/comprar', validarCompra, FinalizarCompraController.comprar)
+router.post ('/finalizarcompra', validarCompra, FinalizarCompraController.finalizarCompraSuccess)
 
 router.get('/sucesso', SucessoController.sucesso) 
 
@@ -130,9 +130,9 @@ router.post('/login/entrar', validarEntrarConta, LoginController.entrarConta)
 router.get('/productlist', ProductListController.productList) 
 
 router.get('/painel', PainelController.painel) 
-router.post ('/painel/editar', validarEditarPainel, PainelController.editarPainel)
+router.post ('/painel', validarEditarPainel, PainelController.editarPainel)
 
-router.get('/painelLogado', PainelLogadoController.logado) 
+router.get('/painelLogado', PainelController.painelLogado) 
 router.get('/logout', LogoutController.logout)
 
 router.get('/carrinho', CarrinhoController.carrinho) 

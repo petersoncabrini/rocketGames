@@ -3,7 +3,7 @@ const FinalizarCompraController = {
     finalizarCompra: function (req, res) {
         res.render('finalizarCompra');
     },
-    comprar: (req, res) => {
+    finalizarCompraSuccess: (req, res) => {
         let errors = validationResult(req)
         if (errors.isEmpty()) {
             res.redirect('/home')

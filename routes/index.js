@@ -11,7 +11,7 @@ const LoginController = require ('../controllers/LoginController')
 const PainelController = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
 const ProductListController = require ('../controllers/ProductListController')
-const PainelLogadoController = require('../controllers/PainelLogadoController')
+// const PainelLogadoController = require('../controllers/PainelLogadoController')
 const LogoutController = require('../controllers/LogoutController')
 
 

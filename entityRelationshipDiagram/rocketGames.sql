@@ -40,6 +40,15 @@ FOREIGN KEY usuario_foreign (usuario_id) REFERENCES usuario(id)
 FOREIGN KEY usuario1_foreign (usuario_id) REFERENCES usuario(id)
 );
 
+CREATE TABLE `tipoconsole`(
+`id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+ `tipoconsole` VARCHAR(45) NOT NULL 
+);
+
+CREATE TABLE `tipoproduto`(
+`id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+ `tipoproduto` VARCHAR(45) NOT NULL 
+);
 
 CREATE TABLE `produto`(
 `id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
@@ -59,15 +68,6 @@ FOREIGN KEY pedidos_foreign (pedidos_id) REFERENCES Pedidos(id) )
 ;
 
 
-CREATE TABLE `tipoconsole`(
-`id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
- `tipoconsole` VARCHAR(45) NOT NULL 
-);
-
-CREATE TABLE `tipoproduto`(
-`id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
- `tipoproduto` VARCHAR(45) NOT NULL 
-);
 
 
 

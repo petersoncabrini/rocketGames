@@ -5,7 +5,7 @@
     
     <div class="d-inline-flex">
       <h2 class="nomeuser">
-        Bem Vindo, <%= nomeUsuario %>! 
+        Bem Vindo, <%= userLogged.name %>! 
       </h2>
       <a class='botaosair' href="/logout">SAIR        
       </a>
@@ -19,7 +19,7 @@
         <div class="card border-0" style="width: 12rem;">
           <img class="card-img-top p-2" src="../img/avatarProfile.png" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title"><%= nomeUsuario %></h5>
+            <h5 class="card-title"><%= userLogged.name %></h5>
           </div>
           <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active"

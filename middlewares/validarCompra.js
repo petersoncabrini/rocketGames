@@ -19,8 +19,8 @@ let validarCompra = [
     .notEmpty().withMessage('O campo Numero do Cartao deve ser preenchido').bail()
     .isCreditCard().withMessage('Digite um numero de cartao valido!'),
     check('Validade')
-    .notEmpty().withMessage('O campo Validade deve ser preenchido').bail()
-    .isDate().withMessage('Digite uma data valida'),
+    .notEmpty().withMessage('O campo Validade deve ser preenchido').bail(),
+    // .isDate().withMessage('Digite uma data valida'),
     check('NomeCartao')
     .notEmpty().withMessage('O campo Nome no Cartao deve ser preenchido').bail()
     .isLength({min:8}).withMessage('O nome e muito curto!'),

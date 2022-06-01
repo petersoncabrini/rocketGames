@@ -28,7 +28,7 @@ const UserController = {
             }
             // Invocando o metodo create da model, e fazendo um push ao JSON com o usuario criado.
             let userCreated = User.create(userCreate)
-            res.render('login')
+            res.render('painel')
             // Erros de validacao dos campos.
         } else {
             res.render('login', { errors: errors.mapped(), old: req.body })

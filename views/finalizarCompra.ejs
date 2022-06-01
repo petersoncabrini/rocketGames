@@ -151,7 +151,7 @@
         <div class="col-md-4">
           <label for="inputPassword4" class="form-label">CEP</label>
           <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            placeholder="Digite seu CEP" name="CEP" value="<%= locals.old && old.CEOP %>">
+            placeholder="Digite seu CEP" name="CEP" value="<%= locals.old && old.CEP %>">
         </div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="tipo" id="inlineCheckbox1" value="midiaDigital" checked>
@@ -162,7 +162,7 @@
           <input class="form-check-input" type="radio" name="tipo" id="inlineCheckbox1" value="midiaFisica">
           <label class="form-check-label" for="inlineCheckbox1">Envio em mídia física.</label>
         </div>
-      </form>
+      
     </div>
     <div class="bloco3">
       <div class="titulo3">
@@ -176,7 +176,7 @@
           <h5>PAGAMENTO:</h5>
         </span>
       </div>
-      <form class="row g-3" method="POST" action="/finalizarCompra">
+      <div class="row g-3">
         <div class="p-2 d-inline-flex" style="width: 100%; margin-top: 20px; height: 45px;">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pagamento" id="inlineCheckbox1" value="Cartao" checked>
@@ -232,15 +232,18 @@
             </select>
             <label for="floatingSelectGrid">* Com Juros</label>
           </div>
-          <div class="col-15" style="margin-bottom: 20px;">
-            <div class="botaofinalizar">
-              <a href="http://localhost:3000/finalizarCompra/comprar"><button type="submit"
-                  class="btn bg-gradient-info text-white w-75 p-3" style="background-color: #00AFEF">
-                  <b>Finalizar Compra</b>
-                </button></a>
-            </div>
+        </div>
+        <!-- <form class="row g-3" method="POST" action="/finalizarCompra"> -->
+
+        <div class="col-15" style="margin-bottom: 20px;">
+          <div class="botaofinalizar">
+            <a href="http://localhost:3000/finalizarCompra"><button type="submit"
+                class="btn bg-gradient-info text-white w-75 p-3" style="background-color: #00AFEF">
+                <b>Finalizar Compra</b>
+              </button></a>
           </div>
         </div>
+      </div>
     </div>
     </form>
     </div>

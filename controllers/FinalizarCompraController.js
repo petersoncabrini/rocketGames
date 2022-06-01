@@ -6,7 +6,7 @@ const FinalizarCompraController = {
     finalizarCompraSuccess: (req, res) => {
         let errors = validationResult(req)
         if (errors.isEmpty()) {
-            res.redirect('/home')
+            res.render('sucesso')
         } else {
             res.render('finalizarCompra', { errors: errors.mapped(), old: req.body })
         }

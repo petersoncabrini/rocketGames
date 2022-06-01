@@ -18,6 +18,9 @@ const validarCriarConta = require ('../middlewares/validarCriarConta')
 const validarEditarPainel = require ('../middlewares/validarEditarPainel')
 const validarEntrarConta = require ('../middlewares/validarEntrarConta');
 
+//Autenticacao
+const auth = require ('../middlewares/auth')
+
 
 
 // Rotas

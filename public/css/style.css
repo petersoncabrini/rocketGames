@@ -1686,7 +1686,8 @@ footer .paymentImg {
   margin-top: 1%;
   box-shadow: 1px 1px 10px 1px rgb(157 160 161);
   border-radius: 1%;
-  width: 58em;
+  width: 1000px;
+  margin-left: 18px;
 
 }
 

@@ -1,57 +1,110 @@
 <%- include('./partials/header') %>
-    <main>
-        <div id="carousel">
-            <ul class="slider">
-                <li>
-                    <img src="/img/eldenring.png" />
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="productimages">
-                <li class="productlist">
-                    <div class="productbox">
-                        <img id="dying" src="/img/dying.png" />
-                        <h3>
-                            Dying Light
-                        </h3>
-                        <p>
-                            R$200,00
-                        </p>
-                        <button class="purchasebutton">
-                            Comprar Agora
-                        </button>
+
+    <body>
+        <main>
+            <div id='mainWrapper'>
+                <div id='items-holder'>
+                    <div class='carrossel-item elder'>
                     </div>
-                </li>
-                <li class="productlist">
-                    <div class="productbox">
-                        <img id="eldenring" src="/img/eldenring.png" />
-                        <h3>
-                            Elden Ring
-                        </h3>
-                        <p>
-                            R$160,00
-                        </p>
-                        <button class="purchasebutton">
-                            Comprar Agora
-                        </button>
+    
+                    <div class='carrossel-item fifa'>
                     </div>
-                </li>
-                <li class="productlist">
-                    <div class="productbox">
-                        <img id="granturismo" src="/img/gran turismo.png" />
-                        <h3>
-                            Gran Turismo
-                        </h3>
-                        <p>
-                            R$150,00
-                        </p>
-                        <button class="purchasebutton">
-                            Comprar Agora
-                        </button>
+    
+                    <div class='carrossel-item gran'>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </main>
+                </div>
+    
+                <button class="botoes" id="prev">prev</button>
+                <button class="botoes" id='next'>next</button>
+            </div>
+    
+            <script>
+                const holder = document.getElementById('items-holder');
+                
+                const buttons = Array.from(document.getElementsByClassName('botoes'));
+    
+                const items = Array.from(document.getElementsByClassName('carrossel-item'))
+    
+                let item = items[0]
+    
+                buttons[1].addEventListener('click', () => {
+                    let index = items.indexOf(item);
+                    let qual = index + 1 >= items.length ? 0 : index + 1
+                    items[qual].scrollIntoView({align: "top"})
+                    item = items[qual]
+                })
+    
+                buttons[0].addEventListener('click', () => {
+                    let index = items.indexOf(item);
+                    let qual = index - 1 < 0 ? items.length - 1 : index - 1
+                    items[qual].scrollIntoView({behavior: 'smooth'})
+                    item = items[qual]
+                })
+            </script>
+
+            <div>
+                <ul class="productimages">
+                    <li class="productlist">
+                        <div class="productbox">
+                            <img id="dying" src="/img/dying.png" />
+                            <h3>
+                                Dying Light
+                            </h3>
+                            <p>
+                                R$200,00
+                            </p>
+                            <button  class="purchasebutton">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </li>
+                    <li class="productlist">
+                        <div class="productbox">
+                            <img id="eldenring" src="/img/eldenring.png" />
+                            <h3>
+                                Elden Ring
+                            </h3>
+                            <p>
+                                R$160,00
+                            </p>
+                            <button class="purchasebutton">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </li>
+                    <li class="productlist">
+                        <div class="productbox">
+                            <img id="granturismo" src="/img/Gran.png" />
+                            <h3>
+                                Gran Turismo
+                            </h3>
+                            <p>
+                                R$150,00
+                            </p>
+                            <button class="purchasebutton">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- <script>
+            function prev() {
+                console.log("prev")
+            }
+            const botaoPrev = document.querySelector(".carousel-control-prev")
+            botaoPrev.addEventListener("click", prev)
+            function next() {
+                console.log("next")
+                const proximo = document.querySelector("#2")
+proximo.scrollIntoView()
+            }
+
+            const botaoNext = document.querySelector(".carousel-control-next")
+            botaoNext.addEventListener("click", next)
+
+
+        </script> -->
+    </body>
     <%- include('./partials/footer') %>

@@ -10,6 +10,7 @@ const SucessoController = require ('../controllers/SucessoController')
 const PainelController = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
 const UserController = require('../controllers/UserController');
+const EnderecoController = require('../controllers/EnderecoController');
 
 // Middlewares
 // Validacao de Formularios
@@ -46,5 +47,7 @@ router.get('/painelLogado', PainelController.painelLogado)
 router.get('/logout', UserController.logout)
 
 router.get('/carrinho', CarrinhoController.carrinho) 
+
+router.get('/endereco', EnderecoController.index) 
 
 module.exports = router;

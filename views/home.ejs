@@ -2,46 +2,32 @@
 
     <body>
         <main>
-            <div id='mainWrapper'>
-                <div id='items-holder'>
-                    <div class='carrossel-item elder'>
-                    </div>
-    
-                    <div class='carrossel-item fifa'>
-                    </div>
-    
-                    <div class='carrossel-item gran'>
-                    </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-    
-                <button class="botoes" id="prev">prev</button>
-                <button class="botoes" id='next'>next</button>
-            </div>
-    
-            <script>
-                const holder = document.getElementById('items-holder');
-                
-                const buttons = Array.from(document.getElementsByClassName('botoes'));
-    
-                const items = Array.from(document.getElementsByClassName('carrossel-item'))
-    
-                let item = items[0]
-    
-                buttons[1].addEventListener('click', () => {
-                    let index = items.indexOf(item);
-                    let qual = index + 1 >= items.length ? 0 : index + 1
-                    items[qual].scrollIntoView({align: "top"})
-                    item = items[qual]
-                })
-    
-                buttons[0].addEventListener('click', () => {
-                    let index = items.indexOf(item);
-                    let qual = index - 1 < 0 ? items.length - 1 : index - 1
-                    items[qual].scrollIntoView({behavior: 'smooth'})
-                    item = items[qual]
-                })
-            </script>
-
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/eldenring.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/granturismo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/fifa.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <div>
                 <ul class="productimages">
                     <li class="productlist">

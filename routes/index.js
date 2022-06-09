@@ -11,6 +11,7 @@ const PainelController = require ('../controllers/PainelController')
 const CarrinhoController = require ('../controllers/CarrinhoController')
 const UserController = require('../controllers/UserController');
 const EnderecoController = require('../controllers/EnderecoController');
+const UsuarioController = require('../controllers/UsuarioController');
 
 // Middlewares
 // Validacao de Formularios
@@ -48,6 +49,9 @@ router.get('/logout', UserController.logout)
 
 router.get('/carrinho', CarrinhoController.carrinho) 
 
-router.get('/endereco', EnderecoController.index) 
+//Models
+
+router.get('/endereco', EnderecoController.index)
+router.get('/usuario', UsuarioController.index)
 
 module.exports = router;

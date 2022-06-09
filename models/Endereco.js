@@ -8,8 +8,13 @@ module.exports = (sequelize, DataTypes) => {
         bairro: DataTypes.STRING,
         complemento: DataTypes.STRING
     }, {
-        tableName: 'endereco',
+        tableName: 'endereço',
         timestamps: false
     })
+
+    Endereco.associate = (models) => {
+        Endereco.belongsTo(models.Usuario, {foreignKey: 'usuario_id'})
+    }
+
     return Endereco;
 }

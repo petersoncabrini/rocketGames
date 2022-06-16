@@ -1,13 +1,13 @@
 const db = require('../models');
 
-const EnderecoController = {
+const PedidosController = {
     index: async (req, res) => {
 
-      const Endereco = await db.Endereco.findAll().then((data) => {
+      const Pedidos = await db.Pedidos.findAll().then((data) => {
           res.send(JSON.stringify(data));
       }).catch((err) => {
           res.send(err);
       })
    }
 }
-module.exports = EnderecoController; 
+module.exports = PedidosController; 

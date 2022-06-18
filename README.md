@@ -25,23 +25,21 @@ O rocketGames é um e-commerce de consoles, jogos e acessórios. Está sendo des
 <li>Nodemon</li> https://www.npmjs.com/package/nodemon
 
 
-## Pastas do Projeto, seguindo o Design Pattern MVC.
+## Pastas do Projeto
 
 <pre>
 ├───.vscode
 ├───bin
+├───config
 ├───controllers
 ├───database
-├───entityRelationshipDiagram
 ├───middlewares
 ├───models
 ├───node_modules
 ├───public
-│   ├───css
-│   └───img
 ├───routes
-└───views
-    └───partials
+├───views
+└───entityRelationshipDiagram (modelagem do database)
 </pre>
 
 

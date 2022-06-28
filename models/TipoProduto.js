@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'tipoproduto',
         timestamps: false
     })
-
+    TipoProduto.belongsTo(models.produto, {foreignKey: 'tipoproduto_id'})
 
     return TipoProduto;
 }

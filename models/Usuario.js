@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'usuario',
         timestamps: false
     })
-
+    Usuario.belongsTo(models.pedidos, {foreignKey: 'pedidos_id'})
 
     return Usuario;
 }

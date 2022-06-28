@@ -7,8 +7,14 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     })
 
-    Pedidos.associate = (models) => {
+   Pedidos.associate = (models) => {
         Pedidos.belongsTo(models.Usuario, {foreignKey: 'usuario_id'})
+        Pedidos.belongsToMany(models.Produto, {
+            through:'pedidos_has_pedidos',
+            foreignKey:'produto_idproduto',
+            otherKey:'pedidos_idpedidos'
+
+        })
     }
 
     return Pedidos;

@@ -6,6 +6,6 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     })
     TipoConsole.belongsTo(models.produto, {foreignKey: 'tipoconsole_id'})
-
+  
     return TipoConsole;
 }

@@ -392,6 +392,15 @@ li a{
   margin-top: 1%;
 }
 
+.containerlogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+
 .content {
   background-color: #fff;
   border-radius: 15px;

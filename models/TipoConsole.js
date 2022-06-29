@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'tipoconsole',
         timestamps: false
     })
-    TipoConsole.belongsTo(models.produto, {foreignKey: 'tipoconsole_id'})
+   
   
     return TipoConsole;
 }

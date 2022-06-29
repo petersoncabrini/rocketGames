@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Pedidos = sequelize.define('Pedidos',{
+    const Pedidos = sequelize.define('Pedidos', {
         data_pedido: DataTypes.DATE,
         valor_total: DataTypes.STRING,
     }, {
@@ -7,14 +7,10 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     })
 
-   Pedidos.associate = (models) => {
-        Pedidos.belongsTo(models.Usuario, {foreignKey: 'usuario_id'})
-        Pedidos.belongsToMany(models.Produto, {
-            through:'pedidos_has_pedidos',
-            foreignKey:'produto_idproduto',
-            otherKey:'pedidos_idpedidos'
+    Pedidos.associate = (models) => {
 
-        })
+        Pedidos.belongsTo(models.Usuario, { foreignKey: 'usuario_id' })
+        Pedidos.belongsToMany(models.Produto, { through: 'pedidos_has_produto', foreignKey: 'produto_id' })
     }
 
     return Pedidos;

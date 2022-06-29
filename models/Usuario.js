@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Usuario = sequelize.define('Usuario',{
+    const Usuario = sequelize.define('Usuario', {
         nome: DataTypes.STRING,
         CPF: DataTypes.STRING,
         email: DataTypes.CHAR,
@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'usuario',
         timestamps: false
     })
-
-
+    Usuario.associate = (models) => {
+        Usuario.hasMany(models.Endereco, {foreignKey: 'usuario_id'})
+    }
     return Usuario;
 }

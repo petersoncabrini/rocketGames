@@ -3,7 +3,6 @@ var router = express.Router();
 
 // Controllers
 
-const FrontEndController = require('../controllers/FrontEndController')
 const HomeController = require ('../controllers/HomeController')
 const ProductController = require ('../controllers/ProductController')
 const FinalizarCompraController = require ('../controllers/FinalizarCompraController')

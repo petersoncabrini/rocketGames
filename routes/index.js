@@ -66,7 +66,7 @@ router.get('/endereco', EnderecoController.index)
 router.get('/usuario', UsuarioController.index)
 router.get('/pedidos', PedidosController.index)
 router.get('/admin', AdminController.index)
-router.get('/produto', ProdutoController.index)
+router.get('/produtos', ProdutoController.index)
 router.get('/tipoconsole', TipoConsoleController.index)
 router.get('/tipoproduto', TipoProdutoController.index)
 

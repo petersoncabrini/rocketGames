@@ -28,11 +28,11 @@ const UsuarioController = {
             })
         }
 
-        // Verificando se o email ja esta cadastrado, e caso exista, enviando erro pra view.
-        let usuarioExistente = db.Usuario.findOne({ where: { email: email } })
-        if (usuarioExistente) {
-            return res.render('register')
-        }
+        // // Verificando se o email ja esta cadastrado, e caso exista, enviando erro pra view.
+        // let usuarioExistente = db.Usuario.findOne({ where: { email: email } })
+        // if (usuarioExistente) {
+        //     return res.render('register')
+        // }
 
         await db.Usuario.create({
             nome,

@@ -21,11 +21,11 @@ const AdminRocketController = require('../controllers/AdminRocketController');
 
 // Middlewares
 // Validacao de Formularios
-const validarCompra = require ('../middlewares/validações/validarCompra')
-const validarCadastro = require ('../middlewares/validações/validarCadastro')
-const validarEditarPainel = require ('../middlewares/validações/validarEditarPainel')
-const validaLogin = require ('../middlewares/validações/validarLogin');
-const validarLoginAdmin = require ("../middlewares/validações/validarLoginAdmin")
+const validarCompra = require ('../middlewares/validacoes/validarCompra')
+const validarCadastro = require ('../middlewares/validacoes/validarCadastro')
+const validarEditarPainel = require ('../middlewares/validacoes/validarEditarPainel')
+const validaLogin = require ('../middlewares/validacoes/validarLogin');
+const validarLoginAdmin = require ("../middlewares/validacoes/validarLoginAdmin")
 
 //Autenticacao
 const auth = require ('../middlewares/auth')

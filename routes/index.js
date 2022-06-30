@@ -33,8 +33,10 @@ const auth = require ('../middlewares/auth')
 
 
 // Rotas
-router.get('/home', HomeController.home) 
 
+router.get('/produto/:idProduto', ProdutoController.produto) // lista de produtos
+
+router.get('/home', HomeController.home) 
 router.get('/product', ProductController.product) 
 
 router.get('/finalizarcompra', FinalizarCompraController.finalizarCompra) 

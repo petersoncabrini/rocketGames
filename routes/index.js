@@ -28,7 +28,7 @@ const validaLogin = require ('../middlewares/validacoes/validarLogin');
 const validarLoginAdmin = require ("../middlewares/validacoes/validarLoginAdmin")
 
 //Autenticacao
-const auth = require ('../middlewares/auth')
+const authUsuario = require('../middlewares/authUsuario');
 
 
 // Rotas
@@ -37,17 +37,17 @@ router.get('/produto/:idProduto', ProdutoController.produto) // lista de produto
 
 router.get('/home', HomeController.home) 
 router.get('/product', ProductController.product) 
-router.get('/finalizarcompra', FinalizarCompraController.finalizarCompra) 
+router.get('/finalizarcompra', authUsuario, FinalizarCompraController.finalizarCompra) 
 router.post ('/finalizarcompra', validarCompra, FinalizarCompraController.finalizarCompraSuccess)
-router.get('/sucesso', SucessoController.sucesso) 
+router.get('/sucesso', authUsuario, SucessoController.sucesso) 
 router.get('/login', UsuarioController.login) 
 router.post('/login', validaLogin, UsuarioController.acaoLogin)
 router.get('/cadastro', UsuarioController.cadastro)
 router.post('/cadastro', validarCadastro, UsuarioController.acaoCadastrar)
-router.get('/logout', UsuarioController.logout)
+router.get('/logout', authUsuario, UsuarioController.logout)
 router.get('/productlist', ProductController.productList) 
-router.get('/painel', PainelController.painel) 
-router.post ('/painel', validarEditarPainel, PainelController.editarPainel)
+router.get('/painel', authUsuario, PainelController.painel) 
+router.post ('/painel', authUsuario, validarEditarPainel, PainelController.editarPainel)
 router.get('/painelLogado', PainelController.painelLogado) 
 
 router.get('/carrinho', CarrinhoController.carrinho) 

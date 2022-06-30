@@ -1,13 +1,21 @@
 const db = require('../models');
 
 const ProdutoController = {
-    index: async (req, res) => {
+    index: (req, res) => {
+        db.Produto.findAll().then((produtos) => {
+            res.render("produtos", {
+                listaProdutos: produtos
+            });
+        }).catch((err) => {
+            res.send("erro de consulta");
+        });
+    },
+    produto: async (req, res) => {
+        const idProduto = req.params.idProduto;
+        const produto = await db.Produto.findByPk(idProduto);
 
-      const Produto = await db.Produto.findAll().then((data) => {
-          res.send(JSON.stringify(data));
-      }).catch((err) => {
-          res.send(err);
-      })
-   }
-}
-module.exports = ProdutoController; 
+        res.send(produto);
+    }
+};
+
+module.exports = ProdutoController;

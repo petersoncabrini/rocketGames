@@ -11,9 +11,9 @@ CREATE TABLE  `admin`(
   CREATE TABLE `usuario`(
 `id`INT(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
 `nome` VARCHAR(45) NOT NULL,
-`CPF`VARCHAR(11) NOT NULL,
-`e-mail` VARCHAR(50) NOT NULL,
-`endereço` VARCHAR(45) NOT NULL,
+`cpf`VARCHAR(11) NOT NULL,
+`email` VARCHAR(50) NOT NULL,
+`endereco` VARCHAR(45) NOT NULL,
 `telefone` CHAR(11) NOT NULL,
 `data_de_nascimento` DATE,
 `senha` VARCHAR(45) NOT NULL
@@ -25,7 +25,7 @@ CREATE TABLE  `admin`(
 `estado`VARCHAR(45) NOT NULL,
 `logradouro` VARCHAR(45) NOT NULL,
 `numero` VARCHAR(45) NOT NULL,
-`CEP` CHAR(8) NOT NULL,
+`cep` CHAR(8) NOT NULL,
 `bairro` VARCHAR(45) NOT NULL,
 `complemento` VARCHAR(45) NOT NULL,
 `usuario_id` INT(10) UNSIGNED NOT NULL,

@@ -3,8 +3,15 @@ const bcrypt = require("bcryptjs")
 const { validationResult } = require("express-validator")
 
 const UsuarioController = {
-    login: (req, res) => {
+    index: (req, res) => {
 
+        db.TipoProduto.findAll().then((data) => {
+            res.send(JSON.stringify(data));
+        }).catch((err) => {
+            res.send(err);
+        })
+     },
+    login: (req, res) => {
         res.render("login")
     },
     cadastro: (req, res) => {

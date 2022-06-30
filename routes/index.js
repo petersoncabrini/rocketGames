@@ -25,6 +25,7 @@ const validarCompra = require ('../middlewares/validações/validarCompra')
 const validarCadastro = require ('../middlewares/validações/validarCadastro')
 const validarEditarPainel = require ('../middlewares/validações/validarEditarPainel')
 const validaLogin = require ('../middlewares/validações/validarLogin');
+const validarLoginAdmin = require ("../middlewares/validações/validarLoginAdmin")
 
 //Autenticacao
 const auth = require ('../middlewares/auth')
@@ -51,12 +52,13 @@ router.get('/painelLogado', PainelController.painelLogado)
 
 router.get('/carrinho', CarrinhoController.carrinho) 
 
-router.get('/adminRocket', AdminRocketController.adminRocket) 
+router.get('/adminrocket', validarLoginAdmin, AdminRocketController.adminRocket) 
+router.post('/adminrocket', validarLoginAdmin, AdminRocketController.acaoLogin)
 
 //Models
 
 router.get('/endereco', EnderecoController.index)
-// router.get('/usuario', UsuarioController.index)
+router.get('/usuario', UsuarioController.index)
 router.get('/pedidos', PedidosController.index)
 router.get('/admin', AdminController.index)
 router.get('/produtos', ProdutoController.index)

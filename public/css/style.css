@@ -396,8 +396,8 @@ li a{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-bottom: 13%;
+  margin-top: 13%;
 }
 
 
@@ -405,7 +405,7 @@ li a{
   background-color: #fff;
   border-radius: 15px;
   width: 960px;
-  height: 55%;
+  height: 45%;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -1753,5 +1753,5 @@ footer .paymentImg {
   margin-top: -8%;
   text-decoration: none;
   color: #000000;
-  margin-left: -18%;
+  margin-left: -17%;
 }

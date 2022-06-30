@@ -24,7 +24,7 @@ const AdminRocketController = require('../controllers/AdminRocketController');
 const validarCompra = require ('../middlewares/validacoes/validarCompra')
 const validarCadastro = require ('../middlewares/validacoes/validarCadastro')
 const validarEditarPainel = require ('../middlewares/validacoes/validarEditarPainel')
-const validaLogin = require ('../middlewares/validacoes/validarLogin');
+const validarLogin = require ('../middlewares/validacoes/validarLogin');
 const validarLoginAdmin = require ("../middlewares/validacoes/validarLoginAdmin")
 
 //Autenticacao
@@ -41,7 +41,7 @@ router.get('/finalizarcompra', authUsuario, FinalizarCompraController.finalizarC
 router.post ('/finalizarcompra', validarCompra, FinalizarCompraController.finalizarCompraSuccess)
 router.get('/sucesso', authUsuario, SucessoController.sucesso) 
 router.get('/login', UsuarioController.login) 
-router.post('/login', validaLogin, UsuarioController.acaoLogin)
+router.post('/login', validarLogin, UsuarioController.acaoLogin)
 router.get('/cadastro', UsuarioController.cadastro)
 router.post('/cadastro', validarCadastro, UsuarioController.acaoCadastrar)
 router.get('/logout', authUsuario, UsuarioController.logout)

@@ -57,12 +57,16 @@ router.post('/adminrocket', validarLoginAdmin, AdminRocketController.acaoLogin)
 
 //Models
 
-router.get('/endereco', EnderecoController.index)
-router.get('/usuario', UsuarioController.index)
-router.get('/pedidos', PedidosController.index)
-router.get('/admin', AdminController.index)
-router.get('/produtos', ProdutoController.index)
-router.get('/tipoconsole', TipoConsoleController.index)
-router.get('/tipoproduto', TipoProdutoController.index)
+router.get('/endereco', EnderecoController.index);
+router.get('/usuario', UsuarioController.index);
+router.get('/pedidos', PedidosController.index);
+router.get('/admin', AdminController.index);
+router.get('/produtos', ProdutoController.listar);
+router.get('/produtos/cadastrar', ProdutoController.cadastrar);
+router.post('/produtos/cadastrar', ProdutoController.acaoCadastrar);
+//router.get('/alterar/:idMarca', ProdutoController.editar);
+//router.post('/alterar/:idMarca', ProdutoController.acaoEditar);
+//router.get('/excluir/:idMarca', ProdutoController.excluir);
+
 
 module.exports = router;

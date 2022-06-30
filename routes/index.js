@@ -17,6 +17,7 @@ const AdminController = require('../controllers/AdminController');
 const ProdutoController = require('../controllers/ProdutoController');
 const TipoConsoleController = require('../controllers/TipoConsoleController');
 const TipoProdutoController = require('../controllers/TipoProdutoController');
+const AdminRocketController = require('../controllers/AdminRocketController');
 
 
 // Middlewares
@@ -54,6 +55,8 @@ router.get('/painelLogado', PainelController.painelLogado)
 router.get('/logout', UserController.logout)
 
 router.get('/carrinho', CarrinhoController.carrinho) 
+
+router.get('/adminRocket', AdminRocketController.adminRocket) 
 
 //Models
 

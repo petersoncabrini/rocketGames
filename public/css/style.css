@@ -1731,3 +1731,27 @@ footer .paymentImg {
   margin-left:5%;
   margin-bottom: 100vh;
 }
+
+/* --- ADMIN ROCKET ---*/
+
+.admin{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9%;
+  margin-top: 7%;
+  border: solid 1px rgb(208, 214, 216);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 20px;
+ border-radius: 2%;
+}
+
+.admin1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9%;
+  margin-top: -8%;
+  text-decoration: none;
+  color: #000000;
+  margin-left: -18%;
+}

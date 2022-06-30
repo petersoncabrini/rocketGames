@@ -400,7 +400,6 @@ li a{
   margin-top: 13%;
 }
 
-
 .content {
   background-color: #fff;
   border-radius: 15px;
@@ -1079,10 +1078,10 @@ main {
 
 
 /* --- INICIO PAGINA FINALIZAR COMPRA ---*/
-
+/* 
 header {
   margin-bottom: 50px;
-}
+} */
 
 
 @media (max-width: 800px) {
@@ -1447,8 +1446,6 @@ section.product {
 
 .productresult {
   display: flex;
-
-
 }
 
 .productresultli {
@@ -1463,9 +1460,7 @@ section.product {
 
 .resultfilter {
   display: flex;
-  margin-left: 1000px;
   font-size: 15px;
-
 }
 
 .productimages {

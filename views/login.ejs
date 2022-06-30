@@ -1,99 +1,59 @@
-<!---
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="/public/css/login.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
---->
-
 <%- include('./partials/header') %>
 
     <body>
-        <% if(typeof errors !=='undefined' ){%>
-            <ul class="erroentrar">
-                <% for(let error in errors) {%>
-                    <li>
-                        <b>
-                            <%= error %>:
-                        </b>
-                        <%= errors[error].msg %>
-                    </li>
-                    <% } %>
-            </ul>
-            <% } %>
+        <% if (typeof errors != "undefined") { %> 
+            <div class="alert-danger">
+                <ul>
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li><%= errors[i].msg %> </li>
+                    <% }} %>
+                </ul>
+            </div>
                 <div class="containerlogin">
                     <div class="content first-content">
+                        <div class="first-column">
+                            <h2 class="title title-primary">Rocket Games!</h2>
+                            <p class="description description-primary">Crie sua conta e veja os lançamentos!</p>
+
+                            <a href="http://localhost:3000/cadastro"><button id="signin" class="btn btn-primary"
+                                style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Criar Conta</button></a>
+                        </div>
+                        <div class="second-column">
+                            <h2 class="title title-second mb-3">ROCKETGAMES</h2>
+                            <form class="form" method="POST" action="/login">
+                                <input class="mb-3" type="email" name="email" placeholder="Email" value="<%= (typeof email != "undefined") ? email:"" %> ">
+                                <input class="mb-3" type="password" name="senha" placeholder="Senha">
+                                <a class="password" href="#">Esqueceu sua senha?</a>
+                                <a href="http://localhost:3000/login"><button class="btn btn-second"
+                                        style="border: solid 2px rgb(149, 208, 235)">Entrar</button></a>
+                            </form>
+                        </div><!-- second column -->
+                    </div><!-- second-content -->
+                    <div class="content second-content">
                         <div class="first-column">
                             <h2 class="title title-primary">RocketGames</h2>
                             <p class="description description-primary">Para se manter conectado conosco faça o login com
                                 seus
                                 dados pessoais!</p>
 
-                            <button id="signin" class="btn btn-primary"
-                                style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Entrar</button>
+                            <a href="http://localhost:3000/login"><button id="signin" class="btn btn-primary"
+                                style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Entrar</button></a>
                         </div>
                         <div class="second-column">
                             <h2 class="title title-second mb-3">Crie sua Conta</h2>
-                            <form class="form" method="POST" action="/login/criar">
+                            <form class="form" method="POST" action="/login">
                                 <input class="mb-3" type="text" name="name" placeholder="Nome"
                                     value="<%= locals.old && old.name %>">
-
-
                                 <input class="mb-3" type="email" name="email" placeholder="Email"
                                     value="<%= locals.old && old.email %>">
-
                                 <input class="mb-3" type="password" name="password" placeholder="Senha"
                                     value="<%= locals.old && old.password %>">
-
-                                <a href="http://localhost:3000/login/criar"><button class="btn btn-second"
+                                <a href="http://localhost:3000/login"><button class="btn btn-second"
                                         style='border: solid 2px rgb(149, 208, 235)'>Criar</button></a>
                             </form>
                         </div><!-- second column -->
                     </div><!-- first content -->
-                    <div class="content second-content">
-                        <div class="first-column">
-                            <h2 class="title title-primary">Rocket Games!</h2>
-                            <p class="description description-primary">Crie sua conta e veja os lançamentos!</p>
-
-                            <button id="signup" class="btn btn-primary"
-                                style="background-color: #00AFEF ; border: solid 1px rgb(149, 208, 235)">Criar
-                                Conta</button>
-                        </div>
-                        <div class="second-column">
-                            <h2 class="title title-second mb-3">ROCKETGAMES</h2>
-                            <form class="form" method="POST" action="/login/entrar">
-                                <input class="mb-3" type="email" name="email" placeholder="Email"
-                                    value="<%= locals.old && old.email %>">
-
-                                <input class="mb-3" type="password" name="password" placeholder="Senha"
-                                    value="<%= locals.old && old.password %>">
-                                <a class="password" href="#">Esqueceu sua senha?</a>
-                                <a href="http://localhost:3000/login/entrar"><button class="btn btn-second"
-                                        style="border: solid 2px rgb(149, 208, 235)">Entrar</button></a>
-                            </form>
-                        </div><!-- second column -->
-                    </div><!-- second-content -->
                 </div>
-                <script>
-                    var btnSignin = document.querySelector("#signin");
-                    var btnSignup = document.querySelector("#signup");
-                    var body = document.querySelector("body");
-                    btnSignin.addEventListener("click", function () {
-                        body.className = "sign-in-js";
-                    });
-                    btnSignup.addEventListener("click", function () {
-                        body.className = "sign-up-js";
-                    })
-                </script>
     </body>
 
     <%- include('./partials/footer') %>

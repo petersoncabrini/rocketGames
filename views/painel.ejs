@@ -42,18 +42,25 @@
               <% } %> 
           </ul>
         <% } %> 
-        <form method="POST" action="/painel">
+        <form class= 'dadoscadastrais' method="POST" action="/painel">
           <div class="titletextt form-row d-inline-flex ">
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault01">Primeiro nome</label>
-              <input type="text" class="form-control" id="validationDefault01"  placeholder="Nome" value="<%= locals.old && old.Nome %>" name="Nome">
+              <input 
+              type="text" 
+              class="form-control" 
+              id="validationDefault01"  
+              placeholder="Nome"
+               value="<%= locals.old && old.Nome %>" 
+               name="Nome">
+            <!--<div class="invalid-feedback"></div>-->
             </div>
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault02 ">Sobrenome</label>
               <input type="text" class="form-control" id="validationDefault02"  placeholder="Sobrenome" value="<%= locals.old && old.Sobrenome %>" name="Sobrenome"
                 >
             </div>
-            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+            <!--<div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefaultUsername">Usuário</label>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -62,11 +69,11 @@
                 <input type="text" class="form-control" id="validationDefaultUsername" value="<%= locals.old && old.Usuario %>"  placeholder="Usuário"
                   aria-describedby="inputGroupPrepend2" name="Usuario" >
               </div>
-            </div>
+            </div>-->
 
           </div>
-          <div class="titletextt form-row d-inline-flex">
-            <div class="col-md-6 mb-3" style="margin-right: 1%;">
+          <div class="titletextt form-row d-inline-flex" style="margin-left:0.4%" >
+            <div class="col-md-6 mb-3" style="margin-right: 1%">
               <label for="validationDefault03">E-mail</label>
               <input type="email" class="form-control"  id="validationDefault03" placeholder="E-mail" value="<%= locals.old && old.Email %>" name="Email">
             </div>
@@ -85,34 +92,34 @@
 
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-10 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault03">Endereco</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Endereco" value="<%= locals.old && old.Endereco %>" name="Endereco" >
+              <label for="validationDefault05">Endereco</label>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="Endereco" value="<%= locals.old && old.Endereco %>" name="Endereco" >
             </div>
-            <div class="col-md-1 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault03">Nº</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Nº" value="<%= locals.old && old.Numero %>" name="Numero" >
+            <div class="col-md-3 mb-3" style="margin-right: 1%;">
+              <label for="validationDefault06">Nº</label>
+              <input type="text" class="form-control" id="validationDefault06" placeholder="Nº" value="<%= locals.old && old.Numero %>" name="Numero" >
             </div>
-            <div class="col-md-5 mb-3" style="margin-right: 1%;">
+            <!--<div class="col-md-5 mb-3" style="margin-right: 1%;">
               <label for="validationDefault03">Complemento</label>
               <input type="text" class="form-control" id="validationDefault03" placeholder="Complemento" value="<%= locals.old && old.Complemento %>" name="Complemento" >
-            </div>
+            </div> -->
           </div>
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault03">Bairro</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Bairro" value="<%= locals.old && old.Bairro %>" name="Bairro" >
+              <label for="validationDefault07">Bairro</label>
+              <input type="text" class="form-control" id="validationDefault07" placeholder="Bairro" value="<%= locals.old && old.Bairro %>" name="Bairro" >
             </div>
             <div class="col-md-3 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault03">Cidade</label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" value="<%= locals.old && old.Cidade %>" name="Cidade" >
+              <label for="validationDefault08">Cidade</label>
+              <input type="text" class="form-control" id="validationDefault08" placeholder="Cidade" value="<%= locals.old && old.Cidade %>" name="Cidade" >
             </div>
             <div class="col-md-2 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault04">Estado</label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" value="<%= locals.old && old.Estado %>" name="Estado" >
+              <label for="validationDefault09">Estado</label>
+              <input type="text" class="form-control" id="validationDefault09" placeholder="Estado" value="<%= locals.old && old.Estado %>" name="Estado" >
             </div>
             <div class="col-md-2 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault05">CEP</label>
-              <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" value="<%= locals.old && old.CEP %>" name="CEP" >
+              <label for="validationDefault10">CEP</label>
+              <input type="text" class="form-control" id="validationDefault10" placeholder="CEP" value="<%= locals.old && old.CEP %>" name="CEP" >
             </div>
           </div>
 
@@ -125,11 +132,11 @@
               </label>
             </div>
           </div>
-          <a href="http://localhost:3000/painel">
+          <a href="">
           <button class="titletextt btn btn-primary p-2"
             style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 70%;'
-            >editar dados
-            cadastrais</button></a>
+            >cadastrar dados
+            </button></a>
         </form>
       </div>
       </div>
@@ -170,6 +177,12 @@
       </form>
 
     </div>
+
+
+
   </section>
+
+
+  
 
   <%- include('./partials/footer') %>

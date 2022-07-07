@@ -73,8 +73,8 @@ const UsuarioController = {
 
     },
     logout: (req, res) => {
-        req.session.destroy();
-        res.redirect("/home")
+       req.session.destroy();
+       res.redirect("/home")
     }
 }
 module.exports = UsuarioController;

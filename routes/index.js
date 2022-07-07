@@ -46,8 +46,10 @@ router.get('/cadastro', UsuarioController.cadastro)
 router.post('/cadastro', validarCadastro, UsuarioController.acaoCadastrar)
 router.get('/logout', authUsuario, UsuarioController.logout)
 router.get('/productlist', ProductController.productList) 
-router.get('/painel', authUsuario, PainelController.painel) 
-router.post ('/painel', authUsuario, validarEditarPainel, PainelController.editarPainel)
+router.get('/painel', //authUsuario, 
+PainelController.painel) 
+router.post ('/painel', //authUsuario, validarEditarPainel,
+PainelController.editarPainel)
 router.get('/painelLogado', PainelController.painelLogado) 
 
 router.get('/carrinho', CarrinhoController.carrinho) 

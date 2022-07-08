@@ -1,9 +1,12 @@
 <%- include('./partials/header') %>
 
+  <script defer src="/javascripts/painel.js"></script>
 
   <!-- <h1>Bem Vindo %= nomeUsuario %> </h1> -->
 
   <section class="pefil">
+
+
 
     <div class="avatar d-inline-flex" style="height:auto">
       <div class="avatartext">
@@ -42,23 +45,23 @@
               <% } %> 
           </ul>
         <% } %> 
-        <form class= 'dadoscadastrais' method="POST" action="/painel">
+
+
+
+        <form class= 'dadoscadastrais needs-validation' novalidate method="POST" action="/painel">
+
           <div class="titletextt form-row d-inline-flex ">
+            
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault01">Primeiro nome</label>
-              <input 
-              type="text" 
-              class="form-control" 
-              id="validationDefault01"  
-              placeholder="Nome"
-               value="<%= locals.old && old.Nome %>" 
-               name="Nome">
-            <!--<div class="invalid-feedback"></div>-->
+              <label for="validationCustom03">Primeiro nome</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Nome" required value="<%= locals.old && old.Nome %>" name="nome">
+              <div class="invalid-feedback">Nome Obrigatório</div>
             </div>
+
             <div class="col-md-6 mb-3" style="margin-right: 1%;">
               <label for="validationDefault02 ">Sobrenome</label>
-              <input type="text" class="form-control" id="validationDefault02"  placeholder="Sobrenome" value="<%= locals.old && old.Sobrenome %>" name="Sobrenome"
-                >
+              <input type="text" class="form-control" id="validationDefault02"  placeholder="Sobrenome" value="<%= locals.old && old.Sobrenome %>" name="Sobrenome">
+              <div class="invalid-feedback">obba</div>
             </div>
             <!--<div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefaultUsername">Usuário</label>
@@ -124,14 +127,14 @@
           </div>
 
 
-          <div class="form-group">
+        <!--  <div class="form-group">
             <div class="titletextt form-check" style="margin-left: 65%;">
               <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" name="Termos">
               <label class="form-check-label" for="invalidCheck2">
                 Concordo com os termos e condições
               </label>
             </div>
-          </div>
+          </div>-->
           <a href="">
           <button class="titletextt btn btn-primary p-2"
             style='border: solid 1px #00AFEF; background-color: #00AFEF; width: 250px; margin-left: 70%;'
@@ -178,9 +181,74 @@
 
     </div>
 
+    
+    <form class="oba needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">Primeiro nome</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value="Mark" required>
+          <div class="valid-feedback">
+            Tudo certo!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Sobrenome</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" value="Otto" required>
+          <div class="valid-feedback">
+            Tudo certo!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustomUsername">Usuário</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, escolha um nome de usuário.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Cidade</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+          <div class="invalid-feedback">
+            Por favor, informe uma cidade válida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">Estado</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+          <div class="invalid-feedback">
+            Por favor, informe um estado válido.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">CEP</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+          <div class="invalid-feedback">
+            Por favor, informe um CEP válido.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Concordo com os termos e condições
+          </label>
+          <div class="invalid-feedback">
+            Você deve concordar, antes de continuar.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    
 
-
-  </section>
 
 
   

@@ -1,6 +1,6 @@
 <%- include('./partials/header') %>
 
-  <script defer src="/javascripts/painel.js"></script>
+  <script defer src="/javascripts/validacaoFront.js"></script>
 
   <!-- <h1>Bem Vindo %= nomeUsuario %> </h1> -->
 
@@ -50,18 +50,42 @@
 
         <form class= 'dadoscadastrais needs-validation' novalidate method="POST" action="/painel">
 
-          <div class="titletextt form-row d-inline-flex ">
+          <div class="titletextt form-row  ">
             
-            <div class="col-md-6 mb-3" style="margin-right: 1%;">
-              <label for="validationCustom03">Primeiro nome</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="Nome" required value="<%= locals.old && old.Nome %>" name="nome">
+            <div class="d-inline-flex">
+
+     
+
+            <div class="col-md-12 mb-3 " style="margin-right: 1%;">
+              <label for="validationCustom01">Primeiro nome</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required value="<%= locals.old && old.Nome %>" name="nome">
               <div class="invalid-feedback">Nome Obrigatório</div>
             </div>
 
-            <div class="col-md-6 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault02 ">Sobrenome</label>
-              <input type="text" class="form-control" id="validationDefault02"  placeholder="Sobrenome" value="<%= locals.old && old.Sobrenome %>" name="Sobrenome">
-              <div class="invalid-feedback">obba</div>
+            <div class="col-md-11 mb-3" style="margin-right: 1%;">
+              <label for="validationCustom02 ">Sobrenome</label>
+              <input type="text" class="form-control" id="validationCustom02"  placeholder="Sobrenome" required value="<%= locals.old && old.Sobrenome %>" name="Sobrenome">
+              <div class="invalid-feedback">Sobrenome Obrigatório</div>
+            </div>
+
+          </div>
+            
+
+          <div class="d-flex justify-content-start">
+
+              <div class="col-md-4 mb-3" style="margin-right: 1%">
+                <label for="validationCustom03">E-mail</label>
+                <input type="email" class="form-control"  id="validationCustom02" placeholder="E-mail" required value="<%= locals.old && old.Email %>" name="Email">
+                <div class="invalid-feedback">E-mail Obrigatório</div>
+              </div>
+
+              
+              <div class="col-md-3 mb-3" style="margin-right: 1%;">
+                <label for="validationCustom04">CPF</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="CPF" required value="<%= locals.old && old.CPF %>" name="CPF">
+                <div class="invalid-feedback">CPF Obrigatório</div>
+              </div>
+
             </div>
             <!--<div class="col-md-4 mb-3" style="margin-right: 1%;">
               <label for="validationDefaultUsername">Usuário</label>
@@ -75,18 +99,7 @@
             </div>-->
 
           </div>
-          <div class="titletextt form-row d-inline-flex" style="margin-left:0.4%" >
-            <div class="col-md-6 mb-3" style="margin-right: 1%">
-              <label for="validationDefault03">E-mail</label>
-              <input type="email" class="form-control"  id="validationDefault03" placeholder="E-mail" value="<%= locals.old && old.Email %>" name="Email">
-            </div>
-            <div class="col-md-6 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault04">CPF</label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="CPF"  value="<%= locals.old && old.CPF %>" name="CPF">
-            </div>
 
-
-          </div>
 
           <div class="titletext card-body p-0" style="margin-top:10px">
             <h5 class="card-title">Endreço Principal</h5>
@@ -95,12 +108,15 @@
 
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-10 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault05">Endereco</label>
-              <input type="text" class="form-control" id="validationDefault05" placeholder="Endereco" value="<%= locals.old && old.Endereco %>" name="Endereco" >
+              <label for="validationCustom05">Endereco</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Endereco" required value="<%= locals.old && old.Endereco %>" name="Endereco" >
+              <div class="invalid-feedback">Endereço Obrigatório</div>
             </div>
-            <div class="col-md-3 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault06">Nº</label>
-              <input type="text" class="form-control" id="validationDefault06" placeholder="Nº" value="<%= locals.old && old.Numero %>" name="Numero" >
+            
+            <div class="col-md-4 mb-3" style="margin-right: 1%;">
+              <label for="validationCustom06">Número</label>
+              <input type="text" class="form-control" id="validationCustom06" placeholder="Número" required value="<%= locals.old && old.Numero %>" name="Número" >
+              <div class="invalid-feedback">Número Obrigatório</div>
             </div>
             <!--<div class="col-md-5 mb-3" style="margin-right: 1%;">
               <label for="validationDefault03">Complemento</label>
@@ -109,23 +125,37 @@
           </div>
           <div class="titletextt form-row d-inline-flex">
             <div class="col-md-4 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault07">Bairro</label>
-              <input type="text" class="form-control" id="validationDefault07" placeholder="Bairro" value="<%= locals.old && old.Bairro %>" name="Bairro" >
+              <label for="validationCustom07">Bairro</label>
+              <input type="text" class="form-control" id="validationCustom07" placeholder="Bairro" required value="<%= locals.old && old.Bairro %>" name="Bairro" >
+              <div class="invalid-feedback">Bairro Obrigatório</div>
             </div>
             <div class="col-md-3 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault08">Cidade</label>
-              <input type="text" class="form-control" id="validationDefault08" placeholder="Cidade" value="<%= locals.old && old.Cidade %>" name="Cidade" >
+              <label for="validationCustom08">Cidade</label>
+              <input type="text" class="form-control" id="validationCustom08" placeholder="Cidade" required value="<%= locals.old && old.Cidade %>" name="Cidade" >
+              <div class="invalid-feedback">Cidade Obrigatória</div>
             </div>
             <div class="col-md-2 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault09">Estado</label>
-              <input type="text" class="form-control" id="validationDefault09" placeholder="Estado" value="<%= locals.old && old.Estado %>" name="Estado" >
+              <label for="validationCustom09">Estado</label>
+              <input type="text" class="form-control" id="validationCustom09" placeholder="Estado" required value="<%= locals.old && old.Estado %>" name="Estado" >
+              <div class="invalid-feedback">Estado Obrigatório</div>
             </div>
             <div class="col-md-2 mb-3" style="margin-right: 1%;">
-              <label for="validationDefault10">CEP</label>
-              <input type="text" class="form-control" id="validationDefault10" placeholder="CEP" value="<%= locals.old && old.CEP %>" name="CEP" >
+              <label for="validationCustom10">CEP</label>
+              <input type="text" class="form-control" id="validationCustom10" placeholder="CEP" required value="<%= locals.old && old.CEP %>" name="CEP" >
+              <div class="invalid-feedback">CEP Obrigatório</div>
             </div>
           </div>
 
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Concordo com os termos e condições
+            </label>
+            <div class="invalid-feedback">
+              Você deve concordar, antes de continuar.
+            </div>
+          </div>
 
         <!--  <div class="form-group">
             <div class="titletextt form-check" style="margin-left: 65%;">
@@ -180,74 +210,6 @@
       </form>
 
     </div>
-
-    
-    <form class="oba needs-validation" novalidate>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label for="validationCustom01">Primeiro nome</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value="Mark" required>
-          <div class="valid-feedback">
-            Tudo certo!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationCustom02">Sobrenome</label>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" value="Otto" required>
-          <div class="valid-feedback">
-            Tudo certo!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationCustomUsername">Usuário</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
-            </div>
-            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Por favor, escolha um nome de usuário.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom03">Cidade</label>
-          <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
-          <div class="invalid-feedback">
-            Por favor, informe uma cidade válida.
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom04">Estado</label>
-          <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
-          <div class="invalid-feedback">
-            Por favor, informe um estado válido.
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom05">CEP</label>
-          <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
-          <div class="invalid-feedback">
-            Por favor, informe um CEP válido.
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Concordo com os termos e condições
-          </label>
-          <div class="invalid-feedback">
-            Você deve concordar, antes de continuar.
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
-    
 
 
 

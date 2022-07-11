@@ -1084,6 +1084,7 @@ header {
 } */
 
 
+
 @media (max-width: 800px) {
   .dados-cliente {
     flex-direction: column;
@@ -1647,6 +1648,7 @@ footer .paymentImg {
 /* --- INICIO PAGINA PAINEL ---*/
 
 
+
 .perfil {
   margin-bottom: 00vh;
 
@@ -1669,7 +1671,7 @@ footer .paymentImg {
   box-shadow: 1px 1px 10px 1px rgb(157 160 161);
   border-radius: 1%;
   width: 1000px;
-  margin-left: 18px;
+
 
 }
 
@@ -1734,7 +1736,7 @@ footer .paymentImg {
   justify-content: center;
   margin-bottom: 9%;
   margin-top: 9%;
-  border: solid 1px rgb(208, 214, 216);
+
   margin-left: 35%;
   margin-right: 35%;
   padding: 20px;

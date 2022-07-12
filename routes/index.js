@@ -37,8 +37,10 @@ router.get('/produto/:idProduto', ProdutoController.produto) // lista de produto
 
 router.get('/home', HomeController.home) 
 router.get('/product', ProductController.product) 
-router.get('/finalizarcompra', authUsuario, FinalizarCompraController.finalizarCompra) 
-router.post ('/finalizarcompra', validarCompra, FinalizarCompraController.finalizarCompraSuccess)
+router.get('/finalizarcompra', authUsuario, 
+FinalizarCompraController.finalizarCompra) 
+router.post ('/finalizarcompra', validarCompra, 
+FinalizarCompraController.finalizarCompraSuccess)
 router.get('/sucesso', authUsuario, SucessoController.sucesso) 
 router.get('/login', UsuarioController.login) 
 router.post('/login', validarLogin, UsuarioController.acaoLogin)

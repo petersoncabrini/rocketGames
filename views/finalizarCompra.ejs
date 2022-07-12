@@ -1,6 +1,8 @@
 <%- include('./partials/header') %>
 
-  <section class='table-responsive'>
+  <script defer src="/javascripts/validacaoFront.js"></script>
+
+  <section class='table-responsive' style="margin-top: 2%;">
     <table class="tabela">
       <tr>
         <th class="coluna1">Produto</th>
@@ -29,6 +31,8 @@
       </tr>
     </table>
   </Section>
+
+
   <section class="dados-cliente flex-column">
     <div class="">
       <% if(typeof errors !=='undefined' ){%>
@@ -60,7 +64,7 @@
       <form class="row g-3">
         <div class="col-12">
           <label for="inputAddress" class="form-label">E-mail</label>
-          <input type="email" class="form-control" style='border: solid 1px rgb(149, 208, 235)'
+          <input type="email" class="form-control" 
             style='border: solid 1px rgb(149, 208, 235)' id="inputAddress" placeholder="Digite seu e-mail">
         </div>
         <div class="col-md-6">
@@ -105,6 +109,9 @@
         </div>
       </form>
     </div> -->
+    <form class="blocos row g-3 needs-validation" novalidate style="width: 100%;"
+    method="POST" action="/finalizarCompra">
+
     <div class="bloco2">
       <div class="titulo2">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt"
@@ -117,54 +124,75 @@
           <h5>DADOS DE ENTREGA:</h5><br>
         </span>
       </div><br>
-      <form class="row g-3" method="POST" action="/finalizarCompra">
+
+      <div class="row g3 ">
+
         <div class="col-md-4">
-          <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputAddress"
-            placeholder="Digite seu endereço" name="Endereco" value="<%= locals.old && old.Endereco %>">
+          <label for="validationCustom12" class="form-label">Endereço</label>
+          <input type="text" class="form-control" required id="validationCustom12" placeholder="Digite seu endereço"
+            name="Endereco" value="<%= locals.old && old.Endereco %>">
+          <div class="invalid-feedback">Endereço Obrigatório</div>
         </div>
+
         <div class="col-md-1">
-          <label for="inputPassword4" class="form-label">Nº</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            name="Numero" value="<%= locals.old && old.Numero %>">
+          <label for="validationCustom13" class="form-label">Nº</label>
+          <input type="text" class="form-control" required id="validationCustom13" name="Numero"
+            value="<%= locals.old && old.Numero %>">
+          <div class="invalid-feedback">Número Obrigatório</div>
         </div>
+
         <div class="col-md-3">
-          <label for="inputEmail4" class="form-label">Complemento</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputEmail4"
-            name="Complemento" value="<%= locals.old && old.Complemento %>">
+          <label for="validationCustom14" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="validationCustom14" name="Complemento"
+            value="<%= locals.old && old.Complemento %>">
         </div>
+
         <div class="col-md-4">
-          <label for="inputPassword4" class="form-label">Bairro</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            name="Bairro" value="<%= locals.old && old.Bairro %>" placeholder="Digite o Bairro">
+          <label for="validationCustom15" class="form-label">Bairro</label>
+          <input type="text" class="form-control" required id="validationCustom15" name="Bairro"
+            value="<%= locals.old && old.Bairro %>" placeholder="Digite o Bairro">
+          <div class="invalid-feedback">Bairro Obrigatório</div>
         </div>
+
         <div class="col-md-4">
-          <label for="inputEmail4" class="form-label">Cidade</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputEmail4"
-            name="Cidade" value="<%= locals.old && old.Cidade %>" placeholder="Digite a Cidade">
+          <label for="validationCustom16" class="form-label">Cidade</label>
+          <input type="text" class="form-control" required id="validationCustom16" name="Cidade"
+            value="<%= locals.old && old.Cidade %>" placeholder="Digite a Cidade">
+          <div class="invalid-feedback">Cidade Obrigatório</div>
         </div>
+
         <div class="col-md-4">
-          <label for="inputPassword4" class="form-label">Estado</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            name="Estado" value="<%= locals.old && old.Estado %>" placeholder="Digite o Estado">
+          <label for="validationCustom17" class="form-label">Estado</label>
+          <input type="text" class="form-control" required id="validationCustom17" name="Estado"
+            value="<%= locals.old && old.Estado %>" placeholder="Digite o Estado">
+          <div class="invalid-feedback">Estado Obrigatório</div>
         </div>
+
         <div class="col-md-4">
-          <label for="inputPassword4" class="form-label">CEP</label>
-          <input type="text" class="form-control" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            placeholder="Digite seu CEP" name="CEP" value="<%= locals.old && old.CEP %>">
+          <label for="validationCustom18" class="form-label">CEP</label>
+          <input type="text" class="form-control" required id="validationCustom18" placeholder="Digite seu CEP"
+            name="CEP" value="<%= locals.old && old.CEP %>">
+          <div class="invalid-feedback">CEP Obrigatório</div>
         </div>
+        <div class="check" style="margin-top: 2%; margin-left: 1%;">
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="tipo" id="inlineCheckbox1" value="midiaDigital" checked>
           <label class="form-check-label" for="inlineCheckbox1">Envio midia digital (Envio em no max
-            <b>10min</b>.)</label>
+            <b>10min</b>)</label>
         </div>
+        
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="tipo" id="inlineCheckbox1" value="midiaFisica">
-          <label class="form-check-label" for="inlineCheckbox1">Envio em mídia física.</label>
+          <label class="form-check-label" for="inlineCheckbox1">Envio em mídia física</label>
         </div>
-      
+      </div>
     </div>
+  </div>
+
+
+
     <div class="bloco3">
+
       <div class="titulo3">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-credit-card"
           viewBox="0 0 16 16">
@@ -176,45 +204,62 @@
           <h5>PAGAMENTO:</h5>
         </span>
       </div>
+
+
+
       <div class="row g-3">
+
         <div class="p-2 d-inline-flex" style="width: 100%; margin-top: 20px; height: 45px;">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pagamento" id="inlineCheckbox1" value="Cartao" checked>
             <label class="cartao" for="inlineCheckbox1"> <img src="/img/cartaoCredito.png" alt=""> </label>
           </div><br>
+
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pagamento" id="inlineCheckbox1" value="Pix">
             <label class="pix" for="inlineCheckbox1"><img src="/img/pix.png" alt=""></label>
           </div><br>
+
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pagamento" id="inlineCheckbox1" value="Boleto">
             <label class="boleto" for="inlineCheckbox1"><img src="/img/boleto.png" alt=""></label>
-          </div><br>
+          </div>
         </div>
+
+
+
         <div class="col-md-4">
-          <label for="inputAddress" class="form-label">Número do cartão</label>
-          <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputAddress"
-            placeholder="Número do Cartão" name="NumeroCartao" value="<%= locals.old && old.NumeroCartao %>">
+          <label for="validationCustom19" class="form-label">Número do cartão</label>
+          <input type="text" class="form-control mb-3" required id="validationCustom19" placeholder="Número do Cartão"
+            name="NumeroCartao" value="<%= locals.old && old.NumeroCartao %>">
+          <div class="invalid-feedback">Cartão Obrigatório</div>
         </div>
+
         <div class="col-md-4">
-          <label for="inputPassword4" class="form-label">Validade</label>
-          <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            placeholder="mm/aa" name="Validade" value="<%= locals.old && old.Validade %>">
+          <label for="validationCustom20" class="form-label">Validade</label>
+          <input type="text" class="form-control mb-3" required id="validationCustom20" placeholder="mm/aa"
+            name="Validade" value="<%= locals.old && old.Validade %>">
+          <div class="invalid-feedback">Validade Obrigatória</div>
         </div>
+
         <div class="col-4">
-          <label for="inputEmail4" class="form-label">Nome no Cartão</label>
-          <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputEmail4"
-            name="NomeCartao" value="<%= locals.old && old.NomeCartao %>" placeholder="Digite igual ao cartão">
+          <label for="validationCustom20" class="form-label">Nome no Cartão</label>
+          <input type="text" class="form-control mb-3" required id="validationCustom20" name="NomeCartao"
+            value="<%= locals.old && old.NomeCartao %>" placeholder="Digite igual ao cartão">
+          <div class="invalid-feedback">Nome Obrigatório</div>
         </div>
+
         <div class="col-md-2">
-          <label for="inputPassword4" class="form-label">Cód. Seg.</label>
-          <input type="text" class="form-control mb-3" style='border: solid 1px rgb(149, 208, 235)' id="inputPassword4"
-            name="CodigoSeguranca" value="<%= locals.old && old.CodigoSeguranca %>">
+          <label for="validationCustom21" class="form-label">Cód. Seg.</label>
+          <input type="text" class="form-control mb-3" required id="validationCustom21" name="CodigoSeguranca"
+            value="<%= locals.old && old.CodigoSeguranca %>">
+          <div class="invalid-feedback">Código Segurança Obrigatório</div>
         </div>
+
         <div class="col-md-3 d-inline-flex" style="margin-top: 35px;">
           <div class="form-floating">
-            <select class="form-select" style='border: solid 1px rgb(149, 208, 235); width: 250px; margin-right: 300px;'
-              id="floatingSelectGrid" aria-label="Floating label select example" name="QuantidadeParcelas"
+            <select class="form-select" style='width: 250px; margin-right: 300px;' id="floatingSelectGrid"
+              aria-label="Floating label select example" name="QuantidadeParcelas"
               value="<%= locals.old && old.QuantidadeParcelas %>">
               <option selected>Quantidade de parcelas</option>
               <option value="1">1x</option>
@@ -233,7 +278,6 @@
             <label for="floatingSelectGrid">* Com Juros</label>
           </div>
         </div>
-        <!-- <form class="row g-3" method="POST" action="/finalizarCompra"> -->
 
         <div class="col-15" style="margin-bottom: 20px;">
           <div class="botaofinalizar">
@@ -241,11 +285,38 @@
                 class="btn bg-gradient-info text-white w-75 p-3" style="background-color: #00AFEF">
                 <b>Finalizar Compra</b>
               </button></a>
+
           </div>
         </div>
       </div>
-    </div>
-    </form>
-    </div>
+
+
+
+      </form>
+
+
+
+
+
+
   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <%- include('./partials/footer') %>

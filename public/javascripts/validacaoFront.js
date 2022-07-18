@@ -13,7 +13,7 @@
 //var estado = document.getElementById('validationDefault09');
 //var cep = document.getElementById('validationDefault10');
 
-var form = document.querySelector('.dadoscadastrais', 'admin', 'bloco2');
+var form = document.querySelector('.dadoscadastrais', 'admin', 'bloco2', '.form');
 
 
 // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.

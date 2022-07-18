@@ -1,6 +1,9 @@
 <%- include('./partials/header') %>
 
+<script defer src="/javascripts/validacaoFront.js"></script>
+
     <body>
+
         <% if (typeof errors != "undefined") { %> 
             <div class="alert-danger">
                 <ul>
@@ -20,9 +23,11 @@
                         </div>
                         <div class="second-column">
                             <h2 class="title title-second mb-3">ROCKETGAMES</h2>
-                            <form class="form" method="POST" action="/login">
-                                <input class="mb-3" type="email" name="email" placeholder="Email" value="<%= (typeof email != "undefined") ? email:"" %> ">
-                                <input class="mb-3" type="password" name="senha" placeholder="Senha">
+                            <form class="form needs-validation" novalidate method="POST" action="/login">
+                                <input class="formcadastro" type="email" name="email" placeholder="Email" value="<%= (typeof email != "undefined") ? email:"" %> " required>
+                                <div class="invalid-feedback">E-mail Obrigatório</div>
+                                <input class="formcadastro" type="password" name="senha" placeholder="Senha" required>
+                                <div class="invalid-feedback">Senha Obrigatória</div>
                                 <a class="password" href="#">Esqueceu sua senha?</a>
                                 <a href="http://localhost:3000/login"><button class="btn btn-second"
                                         style="border: solid 2px rgb(149, 208, 235)">Entrar</button></a>
@@ -44,10 +49,13 @@
                             <form class="form" method="POST" action="/login">
                                 <input class="mb-3" type="text" name="name" placeholder="Nome"
                                     value="<%= locals.old && old.name %>">
+                                    
                                 <input class="mb-3" type="email" name="email" placeholder="Email"
-                                    value="<%= locals.old && old.email %>">
+                                    value="<%= locals.old && old.email %>" >
+                                    
                                 <input class="mb-3" type="password" name="password" placeholder="Senha"
-                                    value="<%= locals.old && old.password %>">
+                                    value="<%= locals.old && old.password %>" >
+                                    
                                 <a href="http://localhost:3000/login"><button class="btn btn-second"
                                         style='border: solid 2px rgb(149, 208, 235)'>Criar</button></a>
                             </form>

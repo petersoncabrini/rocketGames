@@ -392,6 +392,10 @@ li a{
   margin-top: 1%;
 }
 
+.formcadastro{
+  margin-top: 3%;
+}
+
 .containerlogin {
   display: flex;
   justify-content: center;
@@ -404,7 +408,7 @@ li a{
   background-color: #fff;
   border-radius: 15px;
   width: 960px;
-  height: 45%;
+  height: 50%;
   justify-content: space-between;
   align-items: center;
   position: relative;
